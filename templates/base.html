@@ -34,18 +34,27 @@
 <body>
 
   <!-- ======= Header ======= -->
+  {% if request.resolver_match.view_name == 'home' %}
   <header id="header" class="fixed-top header-transparent">
+  {% else %}
+  <header id="header" class="fixed-top">
+  {% endif %}
     <div class="container">
 
       <div class="logo float-left">
-       <a href="index.html"><img id="nav-logo" src="{% static 'img/infinity_caterers_logo.png' %}" alt="" class="img-fluid"></a>
+       <a href="{% url 'home' %}">
+       {% if request.resolver_match.view_name == 'home' %}
+       <img id="nav-logo" src="{% static 'img/infinity_caterers_logo.png' %}" alt="" class="img-fluid"></a>
+       {% else %}
+       <img src="{% static 'img/infinity_caterers_logo.png' %}" alt="" class="img-fluid"></a>
+       {% endif %}
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li {% if request.resolver_match.view_name == 'home' %}class="active"{% endif %}><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
           <li class="drop-down"><a href="">Menus</a>
             <ul>
               <li><a href="#">Weddings</a></li>
@@ -54,9 +63,9 @@
               <li><a href="#">Corporate</a></li>
             </ul>
           </li>
-          <li><a href="portfolio.html">Gallery</a></li>
-          <li><a href="team.html">Venues</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li {% if '/venues' in request.path %}class="active"{% endif %}><a href="{% url 'venues' %}">Venues</a></li>
+          <li {% if request.resolver_match.view_name == 'contact_us' %}class="active"{% endif %}><a href="{% url 'contact_us' %}">Contact Us</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -70,7 +79,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
-    <div class="footer-newsletter">
+    {% comment %} <div class="footer-newsletter">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -84,7 +93,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> {% endcomment %}
 
     <div class="footer-top">
       <div class="container">
@@ -96,37 +105,35 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Menus</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Venues</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Our Venues</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Loft at Passyunk</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Platform 30</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Society Hill Dance Academy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Beat Street HV</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Or Ami</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              4401 Cresson Ave <br>
+              Philadelphia, PA 19127<br><br>
+              <strong>Phone:</strong> <a href="tel:2155097280">215-509-7280</a><br>
+              <strong>Email:</strong> <a href="mailto:info@infinitycaterers.com">info@infinitycaterers.com</a><br>
             </p>
 
           </div>
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About Moderna</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <img src="{% static 'img/infinity_caterers_logo.png' %}" alt="" class="img-fluid">
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -141,7 +148,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Infinity Caterers</span></strong>. All Rights Reserved | Web Design & Development by <a href="http://www.elevatedwebsystems.com">Elevated Web Systems</a>
       </div>
       
     </div>

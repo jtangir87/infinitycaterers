@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main id="main">
+  <!-- ======= Our Services Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Venues</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Venues</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Our Services Section -->
+
+    <!-- ======= Service Details Section ======= -->
+    <section class="service-details">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'img/venues/society-hill-dance-main.jpg' %}" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="#">Loft at Passyunk</a></h5>
+                <p class="card-text">Set in the quaint and romantic surroundings of the historic Headhouse Square, Society Hill Dance Academy provides you with everything you need to make all your wedding dreams come true.</p>
+                <p class="card-text font-italic">This hidden gem of a venue is  a certified historic Philadelphia building with loads of charm! Located at 2nd & Pine Streets, this venue offers open light filled rooms and has a guest capacity of 150.</p>
+                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Learn More</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'img/venues/society-hill-dance-main.jpg' %}" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="#">Society Hill Dance Academy</a></h5>
+                <p class="card-text">Set in the quaint and romantic surroundings of the historic Headhouse Square, Society Hill Dance Academy provides you with everything you need to make all your wedding dreams come true.</p>
+                <p class="card-text font-italic">This hidden gem of a venue is  a certified historic Philadelphia building with loads of charm! Located at 2nd & Pine Streets, this venue offers open light filled rooms and has a guest capacity of 150.</p>
+                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Learn More</a></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'img/venues/platform-30-main.jpg' %}" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="#">Platform 30</a></h5>
+                <p class="card-text">Platform Thirty at Beat Street Station is located in the heart of Manayunk. A newly renovated historic building, with a brand new modern look. Once a train station hub, it is now a premiere event facility.</p>
+                <p class="card-text font-italic">The original Beat Street Station underwent extensive renovations.  We expanded our dance floor, revamped our bar area, and gave our venue a chic-modern vibe while keeping the cozy intimate experience that has made us such a fan favorite.</p>
+                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Learn More</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'img/venues/or-ami-main.jpg' %}" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="#">Cogregation Or Ami</a></h5>
+                <p class="card-text">Located in Lafayette Hill, Pennsylvania, the Congregation Or Ami synagogue offers a large event space with a guest capacity of 250.  This newly renovated space is the perfect blank canvas for you to create the perfect party.</p>
+                <p class="card-text font-italic">In addition to the main event space, there’s a smaller side space for a kids cocktail and/or lunch/dinner.  There’s also an additional large downstairs cocktail space for adults.</p>
+                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Learn More</a></div>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-6 d-flex align-items-stretch mx-auto" data-aos="fade-up">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'img/venues/beat-street-main.jpg' %}" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="#">Beat Street</a></h5>
+                <p class="card-text">Located right outside of Philadelphia in Huntingdon Valley, Beat Street features a unique Pop Art ambiance with fun features and layouts that can accommodate any type of event.</p>
+                <p class="card-text font-italic">Beat Street has a funky warehouse look with neon lighting and exposed duct work. The venue offers two room options. The larger room holds 150-200 guests with a separate area for kids cocktails and lunch/dinner. The smaller “Industry” room offers has the same funky warehouse look for a capacity of 100-110 guests.</p>
+                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Learn More</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Service Details Section -->
+  </main><!-- End #main -->
+{% endblock content %}

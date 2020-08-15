@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+<main id="main">
+
+    <!-- ======= Contact Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Contact Us</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Contact Us</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Our Address</h3>
+                  <p>4401 Cresson Ave, Philadelphia, PA 19127</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p><a href="mailto:info@infinitycaterers.com">info@infinitycaterers.com</a></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Us</h3>
+                  <p><a href="tel:2155097280">215-509-7280</a></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="{% url 'contact_us_form' %}" method="post" role="form" class="php-email-form" id="contactUsForm">
+              {% csrf_token %}
+                <div class="form-row">
+                    {% bootstrap_field contact_form.name form_group_class="col-md-4 form-group" show_label=False %}
+                    {% bootstrap_field contact_form.email form_group_class="col-md-4 form-group" show_label=False %}
+                    {% bootstrap_field contact_form.phone form_group_class="col-md-4 form-group" show_label=False %}
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" id="id_message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="How can we help you?"></textarea>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Map Section ======= -->
+    <section class="map mt-2">
+      <div class="container-fluid p-0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.1667914683485!2d-75.22719098456469!3d40.02705538716996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b8bffc99db47%3A0x2444e9f9117711af!2sInfinity%20Caterers%2C%20Inc.!5e0!3m2!1sen!2sus!4v1597497576969!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </section><!-- End Map Section -->
+
+  </main><!-- End #main -->
+
+
+{% endblock content %}

@@ -53,12 +53,12 @@
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
           <li {% if request.resolver_match.view_name == 'home' %}class="active"{% endif %}><a href="{% url 'home' %}">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li class="drop-down"><a href="">Menus</a>
+          <li {% if request.resolver_match.view_name == 'about_us' %}class="active"{% endif %}><a href="{% url 'about_us' %}">About Us</a></li>
+          <li><a href="{% url 'home' %}#services" class="scrollto">Services</a></li>
+          <li {% if '/menus' in request.path %}class="drop-down active"{% else %} class="drop-down" {% endif %}><a href="">Menus</a>
             <ul>
-              <li><a href="#">Weddings</a></li>
-              <li><a href="#">Mitzvahs</a></li>
+              <li><a href="{% url 'menu_wedding' %}">Weddings</a></li>
+              <li><a href="{% url 'menu_mitzvah' %}">Mitzvahs</a></li>
               <li><a href="#">Private Events</a></li>
               <li><a href="#">Corporate</a></li>
             </ul>
@@ -148,7 +148,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Infinity Caterers</span></strong>. All Rights Reserved | Web Design & Development by <a href="http://www.elevatedwebsystems.com">Elevated Web Systems</a>
+        &copy; Copyright <strong><span>Infinity Caterers</span></strong>. All Rights Reserved | Web Design & Development by <a href="http://www.elevatedwebsystems.com" target="_blank">Elevated Web Systems</a>
       </div>
       
     </div>

@@ -1,0 +1,339 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main id="main">
+
+    <!-- ======= Our Menus Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Wedding Menus</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Menus</li>
+            <li>Weddings</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Our Menus Section -->
+
+    <!-- ======= Menus Section ======= -->
+    <section class="menu">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="menu-flters">
+              <li data-filter=".filter-sample1" class="filter-active">Sample 1</li>
+              <li data-filter=".filter-sample2">Sample 2</li>
+              <li data-filter=".filter-sample3">Sample 3</li>
+              <li data-filter=".filter-sample4">Sample 4</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+        <!-- Wedding Sample 1 -->
+          <div class="col-lg-12 col-md-12 filter-sample1">
+            <div class="course mb-4">
+                <h2 class="course-name">Cocktail Hour</h2>
+                <h4 class="course-subtitle">Passed Hors D'oeuvres</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Fried Oysters served with a Creole Bayou Dipping Sauce</li>
+                            <li>Cheese Steak Spring Rolls accompanied with Ketchup</li>
+                            <li>Mini Fried Ravioli with a Marinara Dipping Sauce</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Pigs in a Blanket with Spicy Mustard</li>
+                            <li>Caprice set atop Toasted Crostinis with Balsamic Drizzle</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <h2 class="course-name">Main Course</h2>
+                <h4 class="course-subtitle">Stationary Presentations</h4>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Tossed Fresh Greens Salad with Sliced Granny Smith Apple, Honey Caramelized Spiced Walnuts & Crumbled Goat Cheese accompanied with a Pommery Balsamic Vinaigrette</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 col-md-12 ">
+                        <h4 class="course-subtitle">Made-To-Order Slider Bar</h4>
+                        <ul class="menu-items">
+                            <li><strong>Homemade Southern Fried Chicken Tenders</strong> Remoulade Sauce & Honey Mustard</li>
+                            <li><strong>BBQ Pulled Pork</strong> with Potato Rolls</li>
+                            <li><strong>Slider Bar Toppings:</strong> Sliced pickles, Crispy bacon, American cheese, plum tomatoes & Remoulade Sauce, BBQ & Honey Mustard with Slider Buns & Steamed Potato Rolls</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 col-md-12 ">
+                        <h4 class="course-subtitle">Side Dishes</h4>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <ul class="menu-items">
+                                    <li>Penne pasta with fresh sautéed vegetables in a white wine parmesan garlic sauce</li>
+                                    <li>Homemade Watercress Coleslaw</li>
+                                    <li>Homemade Mac & Cheese topped with Italian Bread Crumbs</li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <ul class="menu-items">
+                                    <li>Hush Puppies with a Creamy Orange Dipping Sauce</li>
+                                    <li>Crispy Sweet Potato Fries with a Horseradish Honey Dipping Sauce</li>
+                                    <li>Sautéed Zucchini & Summer Squash Medley</li>
+                                    <li>2 Gluten Free Pastas</li>
+                                </ul>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="course">
+                <h2 class="course-name">Dessert</h2>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Celebration Cake & Cupcakes</li>
+                            <li>Fresh Roasted Colombian Regular & Decaffeinated Coffee with Herbal Tea Service</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- End Wedding Sample 1-->
+        <!-- Wedding Sample 2 -->
+          <div class="col-lg-12 col-md-12 filter-sample2">
+            <div class="course mb-4">
+                <h2 class="course-name">Cocktail Hour</h2>
+                <h4 class="course-subtitle">Passed Hors D'oeuvres</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Pigs in the Blanket with Spicy Mustard</li>
+                            <li>Shot of Cucumber Gazpacho Soup served in Clear Mini Cylinders</li>
+                            <li>Mexican Spiced Mango Skewers</li>
+                            <li>Cilantro marinated Mahi Mahi Lettuce Wrap with Lime & Hot Sauce</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Chili Lime Rubbed Chicken Wings with Salsa Verde</li>
+                            <li>Buttermilk Biscuit Bites with Cajun Brown Butter</li>
+                            <li>Shot of Sweet Corn Soup with Ancho Chili Tortilla Crisps</li>
+                            <li>Cajun Shrimp Skewers with Creamy BBQ sauce</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <h2 class="course-name">Main Course Buffet</h2>
+                <h4 class="course-subtitle">Mexican Street Cart Display</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li><strong>Burrito Bar</strong></li>
+                            <li>Warmed Flour Tortillas</li>
+                            <li>Chicken, Carne Asada, Black Bean</li>
+                            <li>Shredded Cheese, Cotija Cheese, Sour Cream</li>
+                            <li>Lettuce, Tomato, Corn Salsa</li>
+                            <li>Homemade Guacamole, Green Salsa, Fresh Pico de Gallo</li>
+                            <li>(Mushrooms & Onions available for Vegans)</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li><strong>Homemade Quesadillas</strong></li>
+                            <li>Vegetarian & Chicken with Cheese</li>
+                        </ul>
+                        <ul class="menu-items">
+                            <li><strong>Tacos de Carne Asada</strong></li>
+                            <li>Grilled flank steak soft taco with cilantro, cumin, garlic, citrus lime juice, chili</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 col-md-12 ">
+                        <h4 class="course-subtitle">BBQ Station</h4>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <ul class="menu-items">
+                                    <li>BBQ Glazed Braised Brisket</li>
+                                    <li>BBQ Pulled Chicken with Hawaiian Sweet Rolls with Watercress Coleslaw</li>
+                                    <li>Red Bliss Dijon Potato Salad</li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <ul class="menu-items">
+                                    <li>Grilled Corn Salad with Vine Ripened Tomatoes & Diced Cucumbers with a Lemon Dijon Pepper Vinaigrette</li>
+                                    <li>Corn Bread with Sweet Creamy Butter</li>
+                                    <li>Vegan Potato Salad</li>
+                                </ul>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <p class="text-center" style="font-style:italic; padding-bottom:20px;">All served in red & white checkered boats placed with wax paper & wooden sporks</p>
+            </div>
+            <div class="course">
+                <h2 class="course-name">Dessert Buffet</h2>
+                    <div class="col-lg-12 col-md-12 ">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <ul class="menu-items">
+                                    <li>Mini Pastry Display</li>
+                                    <li>Warm Medium Sized Chocolate Chip Cookies with Shots of 2% Milk & Non-Dairy Almond Milk</li>
+                                    <li>Double Fudge Brownies</li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <ul class="menu-items">
+                                    <li>Fresh Fruit Display topped with Mixed Berries</li>
+                                    <li>Mini Cones filled with Lemon & Raspberry Sorbet set in Painter’s Palettes</li>
+                                    <li>Regular & Decaf Coffee Service</li>
+                                </ul>
+                            </div>
+                        </div>  
+                    </div>
+            </div>
+
+        </div><!-- End Wedding Sample 2-->
+            <!-- Wedding Sample 3 -->
+          <div class="col-lg-12 col-md-12 filter-sample3">
+            <div class="course mb-4">
+                <h2 class="course-name">Cocktail Hour</h2>
+                <h4 class="course-subtitle">Stationary Appetizers</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li><strong>Artisanal Cheese & Meat Board</strong><br>
+                            Italian Dried Meats, California Cheeses, Assorted Olives, Sundried Fruits & Nuts, Red & Green Grapes, Driscoll Strawberries,
+                                Rolled Prosciutto wrapped in Cantaloupe served with Sliced French Bread & Croustini, Dijon & Whole Grain Mustards<br>Displayed on wooden boards & treated wooden logs</Italian>
+                            <li><strong>Parmesan Cups</strong> filled with a Chive Goat Cheese Mousse</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li><strong>BBQ Pulled Pork</strong> set atop a Mini Cornbread Squares</li>
+                            <li><strong>Stuffed Crimini Mushrooms</strong> with Sundried Tomatoes, Roasted Chopped Garlic, Italian Bread Crumbs & Melted Parmesan</li>
+                            <li><strong>Mini Red Bliss Twice Baked Potato</strong> with Aged Cheddar & Apple wood Smoked Bacon</li>
+                            <li><strong>Avocado Toast</strong> Sprinkled with Sumac</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <h2 class="course-name">Main Course</h2>
+                <h4 class="course-subtitle">Family Style Dinner</h4>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 ">
+                        <ul class="menu-items">
+                            <li><strong>Micro Greens & Arugula Salad</strong> with Sundried Cranberries & Toasted Almonds tossed in Grapefruit Vinaigrette</li>
+                            <li><strong>Black Peppercorn Crusted Skirt Steak</strong> with Sautéed Mushrooms</li>
+                            <li><strong>Full Size Grilled Vegetable Kabobs</strong> drizzled with Roasted Red Pepper Coulis & Balsamic Reduction</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 col-md-12 ">
+                        <h4 class="course-subtitle">Accompanying Sides</h4>
+                        <ul class="menu-items">
+                            <li><strong>Wagon Wheel Pasta Salad</strong> with Heirloom Tomatoes, Italian Parsley, Red Pepper Flakes, Lemon & Olive Oil topped with Shredded Pecorino</li>
+                            <li><strong>Sweet Corn Salad</strong> with Diced Cucumbers, Red Pepper, Green Onions & Fresh Mint with Cider Vinaigrette</li>
+                            <li><strong>Breadsticks</strong> in Mason Jars along tables</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="course">
+                <h2 class="course-name">Dessert Station</h2>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Wedding Cake</li>
+                            <li>Assortment of 20 Pies</li>
+                            <li>Jack & Jill Ice Cream Sandwiches</li>
+                            <li>Bonfire S’mores</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- End Wedding Sample 3-->
+         <!-- Wedding Sample 4 -->
+          <div class="col-lg-12 col-md-12 filter-sample4">
+            <div class="course mb-4">
+                <h2 class="course-name">Cocktail Hour</h2>
+                <h4 class="course-subtitle">Passed Hors D’oeuvres</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li><strong>Cilantro & Shrimp Spring Rolls</strong> with an Orange Jalapeno Dip</li>
+                            <li><strong>Crunchy Pea & Potato Burmese Samosas</strong> with Mango Dip</li>
+                            <li><strong>Vegetarian & Chicken Summer Rolls</strong> with Fresh Mango served with Nouc Cham Dipping Sauce</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li><strong>Steamed Vegetable Shumai</strong> with a Ginger Hoisin Sauce</li>
+                            <li><strong>Pan Seared Edamame Pot Stickers</strong> with a Chili Garlic Soy Sauce</li>
+                            <li><strong>Mini Baked Brie & Pear</strong></li>
+                            <li><strong>Potato & Leek Pancake</strong> topped with a Wasabi Cream Fraiche</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <h2 class="course-name">Main Course</h2>
+                <h4 class="course-subtitle">Buffet Stations</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li><strong>Steamed Edamame</strong> dusted in Sea Salt</li>
+                            <li><strong>Pan Seared Glazed Szechuan Tofu</strong> on a Bed Crispy String Beans in Black Bean Sauce</li>
+                            <li><strong>Oven Roasted Chinese Eggplant</strong> Sliced dressed with Spicy Peanut Compote</li>
+                            <li><strong>Steamed Stuffed Cabbage Leaves</strong> with Buckwheat Noodles & Seitan topped with Rice Wine Dressing & Wasabi Sesame Seeds</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li><strong>Vegetable Pad Thai</strong> topped with Crispy Rice Noodles & Crunchy Peanuts</li>
+                            <li><strong>Szechuan Salad</strong> with Broccoli Spears, Toasted Cashews, Sugar Snap Peas & Roasted Peppers tossed in a Soy Ginger Teriyaki Sauce</li>
+                            <li><strong>Orange Jasmine Rice Pilaf</strong> with Cashews, Chives & Yellow Pepper</li>
+                            <li><strong>Forbidden Coconut Black Rice Pilaf</strong> with Garlic, Scallions & Red Pepper</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="course">
+                <h2 class="course-name">Dessert Station</h2>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>@todo NEED TO CONFIRM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- End Wedding Sample 4-->
+
+
+
+
+
+      </div>
+    </section><!-- End Menus Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

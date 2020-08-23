@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>About Us</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>About Us</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= About Section ======= -->
+    <section class="about" data-aos="fade-up">
+      <div class="container">
+
+        <div class="row mb-5">
+          <div class="col-lg-4">
+            <img src="{% static 'img/fred_bio_pic.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0">
+            <h3>Fred Morganstein</h3>
+            <p>
+                “Anything it takes to make the customer happy”, is Fred’s primary philosophy since he opened the doors of Infinity Caterers, Inc. 
+                over 14 years ago. With 25 years of experience in the restaurant and catering industries, F
+                red has certainly learned what it takes to make his customers happy.
+            </p>
+            <p>
+                After years in the restaurant business and working as the second in command for a high end catering business, Fred created Infinity Caterers in 1996 
+                to put all he learned about satisfying customers through the art of delivering great food and amazing service.
+            </p>
+            <p>
+                Since then Infinity Caterers has wowed their client with creative new dishes, gorgeous presentations, and a staff that leaves nothing to chance.  
+                Providing a new higher end corporate experience and detail oriented private catering know-how, Infinity Catering has filled a niche for many that did not exist previously.
+            </p>
+            <p>
+            For the last 2 decades, Fred, along with his partner/executive chef Nick Tellie, pride themselves on the thrill of making the customer happy.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 order-1 order-lg-2">
+            <img src="{% static 'img/nick_bio_pic.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 order-2 order-lg-1">
+            <h3>Nicholas Tellie</h3>
+            <p>
+                Nick is the Executive Chef/Owner of Infinity Caterers. Since assuming his role as Executive Chef, Nick has made the menu his own by introducing fresh, modern, and contemporary 
+                styles to the cuisine offered by Infinity Caterers proving over and over again that a quality event is created by an artist who loves his craft.
+            </p>
+            <p>
+                Nick studied at The Restaurant School of Philadelphia and from there went on to work with several prestigious and award winning chefs throughout Philadelphia. Influential mentors 
+                include Fritz Blank of Deux Cheminees and Manfred Bast of The Restaurant School. These mentors taught him the importance of utilizing the freshest ingredients and waking up every day with 
+                the intention of pleasing his clients.
+            </p>
+            <p>
+                Prior to his training as a chef, Nick received his Bachelors Degree in Industrial/Organizational Psychology from The University of Scranton.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section class="facts section-bg" data-aos="fade-up">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">24</span>
+            <p>Years of Experience</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,221</span>
+            <p>Happy Clients</p>
+          </div>
+
+          <div class="col-lg-3 col-12 text-center">
+            <span data-toggle="counter-up">2,976</span>
+            <p>Events Catered</p>
+          </div>
+
+          <div class="col-lg-3 col-12 text-center">
+            <span data-toggle="counter-up">892,846</span>
+            <p>Mini Hot Dogs Served</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+
+
+
+  </main><!-- End #main -->
+
+{% endblock content %}

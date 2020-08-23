@@ -1,0 +1,521 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main id="main">
+
+    <!-- ======= Our Menus Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Mitzvah Menus</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Menus</li>
+            <li>Weddings</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Our Menus Section -->
+
+    <!-- ======= Menus Section ======= -->
+    <section class="menu">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="menu-flters">
+              <li data-filter=".filter-sample1" class="filter-active">Sample 1</li>
+              <li data-filter=".filter-sample2">Sample 2</li>
+              <li data-filter=".filter-sample3">Sample 3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+        <!-- Wedding Sample 1 -->
+          <div class="col-lg-12 col-md-12 filter-sample1">
+            <div class="course">
+                <h2 class="course-name">Adult Stationary Appetizers</h2>
+                <h4 class="course-subtitle">Mediterranean Display</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Mini Falafel Patties with Tzatziki Sauce</li>
+                            <li>Hummus with Warm Sliced Pita</li>
+                            <li>Sundried Tomato Spread with Flatbreads Chick Pea Salad</li>
+                            <li>Turkish Carrot Dip with Lavash Bread</li>
+                            <li>Imported & Domestic Cheeses Displayed with Assorted Olives, Sundried Fruits & Nuts</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Red & Green Grapes with Driscoll</li>
+                            <li>Strawberries Served with Sliced French Bread & Crostini, Dijon, Fig Jam & Whole Grain Mustards</li>
+                            <li>Crudité Display with Garden Fresh Vegetables and Sun Dried Tomato & Guacamole Spread Red</li>
+                            <li>Green Grapes, Clementine’s, Berries of the Season & Champagne Mustards accompanied with Carr’s Crackers, Flat Breads & Pita Chips</li>
+                        </ul>
+                    </div>
+                </div>
+                <h4 class="course-subtitle">Dim Sum Display with Chopsticks</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Steamed Vegetable & Chicken Shu Mai served with Hoisin Sauce</li>
+                            <li>Peking Duck Wraps with Scallion & Hoisin</li>
+                            <li>Sesame Crusted Seared Ahi Tuna set atop a Cucumber Disc topped with Wasabi Crème Fraiche</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Chicken Teriyaki Summer Rolls wrapped in Rice Paper accompanied with a Sweet Garlic Chile Sauce</li>
+                            <li>Seaweed Salad served in Bamboo Boats topped with Toasted Sesame Seeds</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <h4 class="course-subtitle">Made to Order Sushi Bar with Sushi Chef</h4>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 ">
+                                <ul class="menu-items">
+                                    <li>California, Vegetable, Spicy Tuna, Shrimp Tempura, Crab Rolls, Philly Salmon, Tuna Sashimi, Salmon Sashimi, & Spicy Salmon Sushi Roll with White & Brown Rice accompanied with Miso Sriracha Sauce , Fresh Ginger, Wasabi & Soy Sauces</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <h4 class="course-subtitle">Taco Bar</h4>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 ">
+                                <ul class="menu-items">
+                                    <li>Mini Mahi Mahi Tacos topped with Citrus Aioli, Cilantro Lime Slaw, Queso Fresco</li>
+                                    <li>Mini Seasoned Chicken Tacos topped with Red Pepper Lime Aioli, Mexican Cheddar, Red Pickled Onions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <h4 class="course-subtitle">Gourmet Philly Cheese Steak Bar</h4>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 ">
+                                <ul class="menu-items">
+                                    <li>Mini Croissants accompanied with thinly sliced Rosemary & Dijon Crusted Filet topped with Melted Brie and Caramelized Onions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <h4 class="course-subtitle">Fry Bar</h4>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 ">
+                                <ul class="menu-items">
+                                    <li>Crab Waffle Fries with Melted White Cheddar</li>
+                                    <li>Sweet Potato Shoestring Fries with Chipotle Ketchup</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <h2 class="course-name">Adult Hors D'ouevres</h2>
+                <h4 class="course-subtitle">Butlered Appetizers</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Tuna Tartar in a Sesame Miso Cup with a Mango Wasabi Drizzle</li>
+                            <li>Shiitake & Portobello Mushrooms in Phyllo</li>
+                            <li>Edamame Pancakes topped with a Honey Cup Cream</li>
+                            <li>Crab Risotto Cake with a Dollop of Aioli</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Rosemary & Dijon Crusted Baby Lamb Chops</li>
+                            <li>Chicago Style Hot Dogs accompanied with Ketchup, Relish & Spicy Mustard</li>
+                            <li>Maryland Mini Crab Cakes topped with Louisiana Remoulade</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-12">
+                    <h4 class="course-subtitle">Assorted Flatbread Pizzas</h4>
+                        <ul class="menu-items">
+                            <li>Margherita</li>
+                            <li>Grilled Veggie with fig jam & asiago</li>
+                            <li>Buffalo Chicken with caramelized onions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <h2 class="course-name">Kids Appetizers</h2>
+                <h4 class="course-subtitle">Stationary Buffet</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Pigs in a Blanket accompanied with Spicy Brown Mustard & Ketchup</li>
+                            <li>Seasoned Mozzarella Sticks accompanied with a Basil Marinara dipping sauce</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Seasoned Mozzarella Sticks accompanied with a Basil Marinara dipping sauce</li>
+                            <li>Vegetable Egg Rolls with Duck Sauce</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <h2 class="course-name">Adult Dinner</h2>
+                
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 ">
+                        <h4 class="course-subtitle">First Course - Sit Down</h4>
+                        <ul class="menu-items">
+                            <li>Tossed Fresh Greens Salad with Sliced Granny Smith Apples, Honey Caramelized Spiced Walnuts & Crumbled Goat Cheese accompanied with a Pommery Balsamic Vinaigrette</li>
+                            <li>Le Bus Rolls & Sweet Creamy Butter</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 col-md-12 ">
+                    <h4 class="course-subtitle">Main Course</h4>
+                        <ul class="menu-items">
+                            <li>Sweet Potato Crusted Center Cut Salmon Drizzled with a Light Citrus & Herb Burr Blanc Sauce resting on Spinach. Served with a side of Sugar Snap Peas</li>
+                            <li>Mediterranean Grilled Chicken with Roasted Tomatoes, Capers, Fresh Rosemary & Sage resting on Spinach. Served with a Mini Risotto Cake topped with a Dollop of Pesto</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <h2 class="course-name">Kid's Dinner</h2>
+                <h4 class="course-subtitle">Buffet Presentation</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Caesar Salad with Fresh Baked Croutons & Grated Parmesan Cheese tossed in a Creamy Caesar Dressing</li>
+                            <li>Seasoned Chicken Tenders with Ketchup & Honey Mustard</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Silver Dollar Hamburgers with a Fixing Bar</li>
+                            <li>Penne Pasta topped with a Creamy Alfredo & Basil Marinara Sauces</li>
+                            <li>Seasoned Waffle Fries & Tater Tots with Ketchup</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <h2 class="course-name">Dessert</h2>
+                <h4 class="course-subtitle">Buffet Presentation</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Infinity’s Liquid Chocolate Shot with Fresh Whipped Cream</li>
+                            <li>S’mores Bar<br>
+                                Roast your Own Marshmallows!<br>
+                                Assorted Marshmallows, Mini Hershey Bars & Graham Crackers
+                            </li>
+                            <li>Mini Chipwiches with Vanilla, Mint Chocolate Chip & Chocolate Ice Cream rolled in Rainbow & Chocolate Sprinkles, Mini M&Ms & Crushed Oreo Pieces</li>
+                            <li>Warm Mini Chocolate Lava Cakes</li>
+                   
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Fall Tarts – Pecan & praline, Apple, & Cranberry</li>
+                            <li>Fresh Fruit Display topped with Berries of the Season</li>
+                            <li>Assorted Apples to include Granny Smith, Honey Crisp & Red Delicious Sliced with Caramel Sauce & Peanut Butter Dips</li>
+                            <li>Oreo Mousse Shooters in Mini Cylinder with Demi Spoon</li>
+                            <li>Mini Cones filled with Raspberry & Lemon Sorbet served in Painter’s Palettes</li>
+                            <li>Fresh Roasted Colombian Regular & Decaffeinated Coffee with Herbal Tea</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- End Sample 1-->
+        <!-- Sample 2 -->
+          <div class="col-lg-12 col-md-12 filter-sample2">
+            <div class="course mb-4">
+                <h2 class="course-name">Cocktail Hour</h2>
+                <h4 class="course-subtitle">Adult Stationary Appetizers</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li><strong>Sushi Bar Display</strong><br>
+                                California, Vegetable, Spicy Tuna, Shrimp Tempura, Crab Rolls, Philly Salmon, Tuna Sashimi, Salmon Sashimi, 
+                                & Spicy Salmon Sushi Roll with White & Brown Rice accompanied with Miso Sriracha Sauce , Fresh Ginger, Wasabi & 
+                                Soy Sauces
+                            </li>
+                            <li><strong>Satay Bar</strong><br>
+                            Bamboo Skewered Grilled Filet, Chicken & Opah (Moon Fish) with accompanying Lemon Garlic Aioli, Red Pepper Coulis, and Herb Chimichurri
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li><strong>Dim Sum Display</strong><br>
+                            Steamed Vegetable & Chicken Shumai served with Plain Hoisin Sauce in Oriental Bamboo Steamers<br>
+                            Peking Duck Wraps with Scallion & Hoisin Sauce<br>
+                            Sesame Crusted Seared Ahi Tuna set atop a Cucumber Disc topped with Wasabi Crème Fraiche<br>
+                            Chicken Teriyaki Summer Rolls wrapped in Rice Paper accompanied by a Sweet Garlic Chile Sauce<br>
+                            Seaweed Salad served in Bamboo Boats topped with Toasted Sesame Seeds<br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12">
+                        <h4 class="course-subtitle">Adult Passed Hors D'oeuvres</h4>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Tuna Tartar in a Sesame Miso Cup with a Mango Wasabi Drizzle</li>
+                            <li>Shiitake & Portobello Mushrooms in Phyllo</li>
+                            <li>Edamame Pancakes topped with a Honey Cup Cream</li>
+                            <li>Mini Risotto Cake with a Dollop of Aioli</li>
+                            <li>New Zealand Salt & Pepper Crusted Baby Lamb Chops</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li><strong>Assorted Flat Bread Pizzas</strong><br>
+                                Margherita, Grilled veggie with fig jam & asiago, Buffalo chicken with caramelized onions
+                            </li>
+                            <li>Mini Mahi-Mahi Tacos topped with Citrus Aioli, Cilantro Lime Slaw, Queso Fresco</li>
+                            <li>Mini Seasoned Chicken Tacos topped with Red Pepper Lime Aioli, Mexican Cheddar, Red Pickled Onions</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12">
+                    <h4 class="course-subtitle">Kids Stationary Appetizers</h4>
+                        <ul class="menu-items">
+                            <li>California & Vegetable Sushi Rolls with Soy Sauce</li>
+                            <li>Pigs in a Blanket with Spicy Mustard</li>
+                            <li>Seasoned Mozzarella Sticks with Marinara Sauce</li>
+                            <li>Mini Brick Oven Pizzas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <h2 class="course-name">Adult Sit-Down Dinner</h2>
+                
+                <div class="row">
+                    <div class="col-lg-12">
+                    <h4 class="course-subtitle">First Course</h4>
+                        <ul class="menu-items">
+                            <li>Tossed Fresh Greens Salad with Sliced Granny Smith Apple, Honey Caramelized Spiced Walnuts & Crumbled Goat Cheese accompanied with a Pommery Balsamic Vinaigrette (with Edible Orchid)</li>
+                            <li>Le Bus Rolls & Sweet Creamy Butter</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12">
+                    <h4 class="course-subtitle">Main Course Dual Entrée</h4>
+                        <ul class="menu-items">
+                            <li>Sweet Potato Shoestring Crusted Grilled Halibut drizzled with a Light Citrus & Herb Burr Blanc Sauce set atop a Bed of Baby Spinach</li>
+                            <li>BBQ Molasses & Apricot Glazed Short Ribs</li>
+                            <li>Horseradish & Garlic Red Bliss Dijon Mashed Potato</li>
+                            <li>Brown Sugar Snap Peas with Whole Baby Roasted Carrots</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="course">
+                <h2 class="course-name">Kid's Dinner</h2>
+                <h4 class="course-subtitle">Buffet Presentation</h4>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <ul class="menu-items">
+                                    <li>Infinity’s Caesar Salad topped with Fresh Baked Croutons & Grated Parmesan Cheese tossed in a Creamy Caesar Dressing</li>
+                                    <li>Seasoned Chicken Tenders accompanied with Ketchup & Honey Mustard</li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <ul class="menu-items">
+                                    <li>Silver Dollar Hamburgers accompanied with a Fixin Bar</li>
+                                    <li>Penne Pasta topped with a Creamy Alfredo & Basil Marinara Sauces</li>
+                                    <li>Seasoned Waffle Fries accompanied with Ketchup</li>
+                                </ul>
+                            </div>
+                        </div>  
+                    </div>
+            </div>
+            <div class="course">
+                <h2 class="course-name">Dessert</h2>
+                <h4 class="course-subtitle">Buffet Presentation</h4>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <ul class="menu-items">
+                                    <li>Custom 3 Tier Bat Mitzvah Cake with Red Velvet, Vanilla Chocolate Chip & Butter layers</li>
+                                    <li>Mini Tiramisu Petit Fours</li>
+                                    <li>Mini Chipwiches with Vanilla & Chocolate Ice Cream rolled in Rainbow & Chocolate Sprinkles, Mini M&Ms & Crushed Oreo Pieces (passed)</li>
+                                    <li>Warm Mini Black & White Chocolate Lava Cakes</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <ul class="menu-items">
+                                    <li>Warm Pull Apart Monkey Bread</li>
+                                    <li>Mango & Lemon Sorbet Served on Ceramic Spoons Dusted with Lemon Crystalized Sugar</li>
+                                    <li>Fresh Fruit Display topped with Berries of the Season</li>
+                                    <li>Fresh Roasted Regular & Decaffeinated Colombian Coffee with Herbal Tea Service</li>
+                                </ul>
+                            </div>
+                        </div>  
+                    </div>
+            </div>
+        </div><!-- End Sample 2-->
+            <!-- Sample 3 -->
+          <div class="col-lg-12 col-md-12 filter-sample3">
+            <div class="course mb-4">
+                <h2 class="course-name">Cocktail Hour</h2>
+                <h4 class="course-subtitle">Adult Stationary Appetizers</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li><strong>Artisanal Cheese & Meat Board</strong><br>
+                                Italian Dried Meats, Pepperoni, California Cheeses, Olive Bar, Sundried Fruits & Nuts, Red & Green Grapes, Driscoll Strawberries<br>
+                                Rolled Prosciutto wrapped in Cantaloupe served with Sliced French Bread & Crostini, Dijon & Whole Grain Mustards, displayed on wooden boards & treated wooden logs<br>
+                                Hummus with Warm Sliced Pita<br>
+                                Falafel with Tzatziki Sauce
+                            </li>
+                            <li><strong>Sushi Bar</strong><br>
+                                California, Vegetable, Spicy Tuna, Philly Salmon, Eel, Spicy Salmon Sushi Rolls with White & Brown Rice accompanied with Miso Sriracha Sauce, Fresh Ginger, Wasabi & Soy Sauces<br>
+                                Chicken Teriyaki Summer Rolls wrapped in Rice Paper accompanied with a Sweet Chile Pepper Sauce<br>
+                                Peking Duck with Hoisin & Scallion Wraps With Chops Sticks
+                            </li>
+                            <li><strong>Gourmet Philly Cheese Steak & Chicken Steak Bar</strong><br>
+                            Freshly baked Mini Croissants accompanied with thinly sliced Rosemary & Dijon Crusted Filet accompanied with Melted Brie and Caramelized Onions
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li><strong>Gourmet Philly Cheese Steak & Chicken Steak Bar</strong><br>
+                            Freshly baked Mini Croissants accompanied with thinly sliced Rosemary & Dijon Crusted Filet accompanied with Melted Brie and Caramelized Onions
+                            </li>
+                            <li><strong>Mexican Taco Bar</strong><br>
+                                Grilled Corn on the Cob cut in Quarters rubbed with Ancho Chili & Seasoned Salt Aioli served with Lime Wedges on a Skewer<br>
+                                Cilantro Marinated Mahi Mahi on a Stick grilled & served with Lime & Hot Sauce on the side<br>
+                                Homemade Quesadillas – Vegetarian & Chicken with cheese<br>
+                                Tacos de Carne Asada – Grilled flank steak soft taco with cilantro, cumin, garlic, citrus lime juice, and chili<br>
+                                Homemade Guacamole, Green Salsa, Fresh Pico de Gallo with Tricolored Tortilla Chips<br>
+                                Pony Coronas, Dos Equis & Tequila Shot
+                            </li>
+                            <li><strong>Fry Bar</strong><br>
+                            Crab Waffle Fries with Melted White Cheddar<br>
+                            Sweet Potato Shoestring Fries with Chipotle Ketchup
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                    <h4 class="course-subtitle">Adult Passed Hors D'oeuvres</h4>
+                        <ul class="menu-items">
+                            <li>Tuna Tartar in a Sesame Miso Cup with a Mango Wasabi Drizzle</li>
+                            <li>Assorted Flat Breads Pizzas</li>
+                            <li>Pigs in a Blanket with Spicy Mustard</li>
+                            <li>BBQ Chicken Cha Siu Boa with Cilantro Ginger Puree</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                    <h4 class="course-subtitle">Kids Stationary Appetizers</h4>
+                        <ul class="menu-items">
+                            <li>Pigs in a Blanket accompanied with Spicy Brown Mustard & Ketchup</li>
+                            <li>Nacho Bar with gourmet chips, salsa, sour cream & melted cheddar</li>
+                            <li>California & Vegetable Sushi Rolls with Soy Sauce</li>
+                            <li>Soft Pretzel Nuggets: regular & cinnamon with Spicy Mustard, Melted Cheddar & Vanilla Icing</li>
+                            <li>Mozzarella Sticks with Marinara</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <h2 class="course-name">Adult Butlered Dinner</h2>
+                
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <ul class="menu-items">
+                            <li>Mediterranean Grilled Marinated Sliced Chicken Tenderloin topped with Roasted Tomatoes & Capers with Fresh Rosemary & Sage Set atop a Bed of Baby Spinach with a Mini Risotto Cake topped with a Dollop of Pesto</li>
+                            <li>Jumbo Lump Crab Cakes with spicy cocktail sauce</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <ul class="menu-items">
+                            <li>Black Bean & Hoisin Baby Lamb Chops with Wasabi Garlic Mashed Potatoes and Parmesan White Truffle Brussel Sprouts</li>
+                            <li>Shrimp Cakes with lemon herb aioli</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="course">
+                <h2 class="course-name">Kid's Dinner</h2>
+                <h4 class="course-subtitle">Buffet Presentation</h4>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <ul class="menu-items">
+                                    <li>Infinity’s Caesar Salad topped with Fresh Baked Croutons & Grated Parmesan Cheese tossed in a Creamy Caesar Dressing</li>
+                                    <li>Chic-Fil-A Sandwiches with Shake Shack Sauce</li>
+                                    <li>Soft Taco Bar with Chicken, Queso & Tomato Salsa</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <ul class="menu-items">
+                                    <li>Silver Dollar Hamburgers accompanied with a Fixin Bar</li>
+                                    <li>Bowtie Pasta topped with a Butter Garlic Parmesan & Basil Marinara Sauces</li>
+                                    <li>Seasoned Waffle Fries & Tater Tots accompanied with Ketchup</li>
+                                </ul>
+                            </div>
+                        </div>  
+                    </div>
+            </div>
+            <div class="course">
+                <h2 class="course-name">Dessert</h2>
+                <h4 class="course-subtitle">Buffet Presentation</h4>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <ul class="menu-items">
+                                    <li>Custom 3 Tier Bat Mitzvah Cake with Red Velvet, Vanilla Chocolate Chip & Butter layers</li>
+                                    <li>Mini Chipwiches with Vanilla & Mint Chocolate chip Ice Cream rolled in Chocolate Sprinkles & Crushed Oreo Pieces (passed)</li>
+                                    <li>Assorted “Dessert Shooters” to include Smores, Apple Pie, Cookies ’n’ Cream & Red Velvet Served with mini demi spoons</li>
+                                    <li>Fresh Fruit Mini Skewers</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <ul class="menu-items">
+                                    <li>Warm Pull Apart Caramel Loaf</li>
+                                    <li>Mango & Lemon Sorbet Served on Ceramic Spoons Dusted with Lemon Crystalized Sugar</li>
+                                    <li>Fresh Roasted Colombian Regular & Decaffeinated Coffee with Herbal Tea Service</li>
+                                    <li>“End of Evening” To-go Snack Custom shaped Soft Pretzels</li>
+                                    <li>Candy Bar</li>
+                                </ul>
+                            </div>
+                        </div>  
+                    </div>
+            </div>
+        </div><!-- End Sample 3-->
+
+
+
+
+
+      </div>
+    </section><!-- End Menus Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

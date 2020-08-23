@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #header.header-scrolled {
-  background: rgba(30, 67, 86, 0.8);
+  background: rgba(0, 107, 166, 0.8);
   height: 60px;
   padding: 10px 0;
 }
@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #a2cce3;
+  color: #f3ce3c;
   text-decoration: none;
 }
 
@@ -641,7 +641,7 @@ section {
 }
 
 .services .icon-box {
-  padding: 30px;
+  padding: 10px;
   position: relative;
   overflow: hidden;
   margin: 0  0 40px 0;
@@ -650,21 +650,33 @@ section {
   transition: all 0.3s ease-in-out;
   text-align: center;
   border: 1px solid #fff;
+  width: 100%;
+}
+
+
+.services .icon-box .btn-primary {
+  background-color: #006ba6;
+  border-color: #006ba6;
+}
+
+.services .icon-box a:hover {
+  background-color: #FEC543;
+  border-color: #FEC543;
 }
 
 .services .icon {
   margin: 0 auto 20px auto;
-  padding-top: 17px;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  width: 72px;
-  height: 72px;
 }
 
-.services .icon i {
-  font-size: 36px;
-  line-height: 1;
+@media(min-width:576px) {
+  .services .icon img {
+    width: 100%;
+    height: 155px;
+  }
+  
 }
 
 .services .title {
@@ -683,49 +695,22 @@ section {
   margin-bottom: 0;
 }
 
-.services .icon-box-pink .icon {
-  background: #fceef3;
-}
-
-.services .icon-box-pink .icon i {
-  color: #ff689b;
-}
 
 .services .icon-box-pink:hover {
   border-color: #ff689b;
 }
 
-.services .icon-box-cyan .icon {
-  background: #e6fdfc;
-}
-
-.services .icon-box-cyan .icon i {
-  color: #3fcdc7;
-}
 
 .services .icon-box-cyan:hover {
   border-color: #3fcdc7;
 }
 
-.services .icon-box-green .icon {
-  background: #eafde7;
-}
 
-.services .icon-box-green .icon i {
-  color: #41cf2e;
-}
 
 .services .icon-box-green:hover {
   border-color: #41cf2e;
 }
 
-.services .icon-box-blue .icon {
-  background: #e1eeff;
-}
-
-.services .icon-box-blue .icon i {
-  color: #2282ff;
-}
 
 .services .icon-box-blue:hover {
   border-color: #2282ff;
@@ -1284,6 +1269,69 @@ section {
     max-width: 100%;
     margin: 0 auto 30px auto;
   }
+}
+
+
+/*--------------------------------------------------------------
+# Menus
+--------------------------------------------------------------*/
+.menu {
+  padding-bottom: 60px;
+}
+
+.menu #menu-flters {
+  padding: 0;
+  margin: 0 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+.menu #menu-flters li {
+  cursor: pointer;
+  margin: 0 12px 5px 12px;
+  display: inline-block;
+  padding: 0 4px 6px 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #444;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
+  border-color: #f3ce3c;
+  color: #f3ce3c;
+}
+
+.menu .course {
+  margin-bottom: 45px;
+}
+
+.menu .course-name {
+  color: #693816;
+  font-size: 45px;
+  font-weight: 800px;
+  text-align: center;
+}
+
+.menu .course-subtitle{
+  color: #ff6d4a!important;
+  font-size: 20px;
+  padding: 5px 15px 0px 15px;
+  text-align: center;
+}
+
+.menu .menu-items {
+  list-style-type: none;
+  font-style: italic;
+  text-align: center;
+  padding-inline-start: 0px;
+}
+
+.menu .menu-items li {
+  padding: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -2212,7 +2260,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #0b212d;
+  background: #015380;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -2267,9 +2315,9 @@ section {
 }
 
 #footer .footer-top {
-  background: #0d2735;
-  border-top: 1px solid #17455e;
-  border-bottom: 1px solid #123649;
+  background: #006ba6;
+  border-top: 1px solid #006ba6;
+  border-bottom: 1px solid #006ba6;
   padding: 60px 0 30px 0;
 }
 
@@ -2364,6 +2412,11 @@ section {
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
 }
+
+#footer .footer-top .footer-contact a{
+  color: #f3ce3c;
+}
+
 
 #footer .footer-top .footer-contact p {
   line-height: 26px;

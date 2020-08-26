@@ -153,12 +153,14 @@
       layoutMode: 'fitRows',
       filter: ".filter-sample1",
     });
-
-    $('#menu-flters li').on('click', function () {
-      $("#menu-flters li").removeClass('filter-active');
+    var galleryIsotope = $('.gallery-container').isotope({
+      layoutMode: 'fitRows',
+    });
+    $('#gallery-flters li').on('click', function () {
+      $("#gallery-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
-      menuIsotope.isotope({
+      galleryIsotope.isotope({
         filter: $(this).data('filter')
       });
       aos_init();

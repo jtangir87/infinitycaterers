@@ -59,11 +59,11 @@
             <ul>
               <li><a href="{% url 'menu_wedding' %}">Weddings</a></li>
               <li><a href="{% url 'menu_mitzvah' %}">Mitzvahs</a></li>
-              <li><a href="#">Private Events</a></li>
+              <li><a href="{% url 'menu_private' %}">Private Events</a></li>
               <li><a href="#">Corporate</a></li>
             </ul>
           </li>
-          <li><a href="#">Gallery</a></li>
+          <li {% if request.resolver_match.view_name == 'gallery' %}class="active"{% endif %}><a href="{% url 'gallery' %}">Gallery</a></li>
           <li {% if '/venues' in request.path %}class="active"{% endif %}><a href="{% url 'venues' %}">Venues</a></li>
           <li {% if request.resolver_match.view_name == 'contact_us' %}class="active"{% endif %}><a href="{% url 'contact_us' %}">Contact Us</a></li>
         </ul>

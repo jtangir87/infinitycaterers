@@ -1,0 +1,227 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main id="main">
+
+    <!-- ======= Our Menus Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Private Party Menus</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Menus</li>
+            <li>Private Parties</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Our Menus Section -->
+
+    <!-- ======= Menus Section ======= -->
+    <section class="menu">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="menu-flters">
+              <li data-filter=".filter-sample1" class="filter-active">Sample 1</li>
+              <li data-filter=".filter-sample2">Sample 2</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+        <!-- Sample 1 -->
+          <div class="col-lg-12 col-md-12 filter-sample1">
+            <div class="course">
+                <h2 class="course-name">Cocktail Hour</h2>
+                <h4 class="course-subtitle">Stationary Appetizers</h4>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="menu-items">
+                            <li><strong>Flatbread Pizza Station</strong><br>
+                            Margherita ~ Spinach, Broccoli ~ Mushroom & Onion w/ a Fig Jam ~ Shrimp & Pesto w/ Parmesan & Mozzarella</li>
+                            <li>Meatball with Red Sauce & Mozzarella</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12">
+                        <h4 class="course-subtitle">Passed Hors D'oeuvres</h4>
+                    </div>
+                    <div class="col-lg-6  col-md-12">
+                        <ul class="menu-items">
+                            <li>Pigs in a Blanket</li>
+                            <li>Hoisin & Black Bean Crusted Baby Lamb Chops</li>
+                            <li>Potato & Leek Pancakes with Raspberry Applesauce</li>
+                            <li>Mini Lump Crab Cakes with Dollop of Spicy Cocktail Sauce</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <ul class="menu-items">
+                            <li>Cocktail Lobster Skewers with Lemon Marmalade Sauce</li>
+                            <li>Sesame & Almond Chicken Bites with Horseradish Orange Marmalade</li>
+                            <li>Mini Mahi Mahi Tacos with Cilantro Lime Slaw, Queso Fresco & Citrus Aioli</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <h2 class="course-name">Main Course</h2>
+                
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                    <h4 class="course-subtitle">Salad</h4>
+                        <ul class="menu-items">
+                            <li>Fresh Greens with Granny Smith Apples, Honey Caramelized Spiced Walnuts & Crumbled Goat Cheese with a Pommery Balsamic Vinaigrette</li>
+                        </ul>
+                    <h4 class="course-subtitle">Gourmet Philly Cheese Steak Bar “Steak Your Way”</h4>
+                        <ul class="menu-items">
+                            <li>Mini Croissants with thinly sliced Rosemary & Dijon Crusted Filet</li>
+                            <li>Choice of Melted Brie & Caramelized Onions Frizzled Leeks & or Wild Mushroom Demi-Glaze</li>
+                            <li>Waffle Style Truffle Fries with Chipotle Ketchup</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                    <h4 class="course-subtitle">Poke Station</h4>
+                        <ul class="menu-items">
+                            <li><strong>Marinated Salmon or Ahi Tuna</strong> atop a layer of Steamed Rice and Crispy Kale topped with your choice of: <br>
+                            Pickled Ginger, Edamame, Scallions, Red Onion, Seaweed Salad, Cucumbers, Diced Mango Red Cabbage & Cubed Pineapple ~ Dressed with Sesame Sriracha Dressing, Lime Cilantro or Ginger Garlic Soy
+                            </li>
+                            <li><strong>Crunchy Ramen Noodle Salad</strong> with Cole Slaw Mix, Sunflower Seeds, Toasted Almonds, Scallions & Mandarin Oranges dressed with a simple Rice Wine Dressing</li>
+                            <li>Roasted Brussel Sprouts with a Balsamic Glaze</li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <p class="text-center" style="font-style:italic; padding-bottom:20px;">**Accompanied with Grilled Salmon & Shrimp for guests who don’t eat raw fish</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <h2 class="course-name">Dessert</h2>
+                <h4 class="course-subtitle">Buffet Presentation</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li><strong>Dessert Shooters</strong><br>
+                                S’mores ~ Apple Pie ~ Cookies & Chocolate Mousse ~ Raspberry & Key Lime
+                            </li>
+                            <li>Raspberry & Mango Sorbet with Fresh Mint Sprig</li>
+                   
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Berry Bar with Fresh Whipped Cream</li>
+                            <li>Fresh Roasted Colombian Regular & Decaffeinated Coffee and Herbal Tea Service</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- End Sample 1-->
+               <!-- Sample 2 -->
+          <div class="col-lg-12 col-md-12 filter-sample2">
+            <div class="course">
+                <h2 class="course-name">Cocktail Hour</h2>
+                <h4 class="course-subtitle">Passed Hors D'oeuvres</h4>
+                <div class="row">
+                    <div class="col-lg-6  col-md-12">
+                        <ul class="menu-items">
+                            <li>Lobster White Truffle Mac & Cheese served on a Mini Ceramic Spoon</li>
+                            <li>Hoisin & Black Bean infused Baby Lamb Chops</li>
+                            <li>Pigs in a Blanket with Spicy Brown Mustard</li>
+                            <li>Sriracha Chicken Meatball Skewers</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <ul class="menu-items">
+                            <li>Mahi-Mahi Mini Fish Tacos served in Metal Holders</li>
+                            <li>Buffalo Chicken Spring Rolls with Spicy Blue Cheese</li>
+                            <li>Cheese Steak Spring Rolls with Ketchup</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <h2 class="course-name">Main Course</h2>
+                
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <h4 class="course-subtitle">Wing Bar</h4>
+                        <ul class="menu-items">
+                            <li>Sesame Thai Asian Wings</li>
+                            <li>BBQ Hot Wings</li>
+                            <li>Served with blue cheese, carrots & celery</li>
+                        </ul>
+                        <h4 class="course-subtitle">Gourmet Philly Cheese Steak Bar “Steak Your Way”</h4>
+                        <ul class="menu-items">
+                            <li>Mini Croissants with thinly sliced Rosemary & Dijon Crusted Filet</li>
+                            <li>Choice of Melted Brie & Caramelized Onions Frizzled Leeks & or Wild Mushroom Demi-Glaze</li>
+                        </ul>
+                        <h4 class="course-subtitle">Flat Bread Pizzas</h4>
+                        <ul class="menu-items">
+                            <li>Grilled bbq chicken, caramelized onions, cheese</li>
+                            <li>Veggie- spinach, garlic, mozzarella, mushrooms, fig jam</li>
+                            <li>Margherita</li>
+                            <li>Meatball, Pepperoni with Mozzarella & Sauce</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <h4 class="course-subtitle">Dim Sum Display</h4>
+                        <ul class="menu-items">
+                            <li><strong>Steamed Vegetable & Chicken Shumai</strong> with plain Hoisin Sauce served in Authentic Bamboo Steamers</li>
+                            <li><strong>Sesame Crusted Seared Ahi Tuna</strong> set atop a Cucumber Disc topped with Wasabi Crème Fraiche</li>
+                            <li><strong>California, Salmon & Vegetable Sushi Rolls</strong> with Fresh Ginger, Wasabi & Soy Sauces</li>
+                            <li><strong>Chicken Teriyaki Summer Rolls</strong> wrapped in Rice Paper accompanied with a Sweet Garlic Chile Sauce</li>
+                            <li><strong>Peking Duck Wraps</strong> with Scallion & Plain Hoisin</li>
+                            <li><strong>Seaweed Salad</strong> served in Bamboo Boats topped with Toasted Sesame Seeds</li>
+                        </ul>
+                        <h4 class="course-subtitle">Fry Bar</h4>
+                        <ul class="menu-items">
+                            <li>Crab Waffle Fries with Melted White Cheddar</li>
+                            <li>Sweet Potato Shoestring Fries with Chipotle Ketchup</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="course">
+                <h2 class="course-name">Dessert</h2>
+                <h4 class="course-subtitle">Buffet Presentation</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            <li>Vanilla Chocolate Chip Birthday Cake with 80’s Sports Logos- Flyers, Phillies, Sixers, Eagles</li>
+                            <li>Mini Chipwiches with Vanilla & Chocolate Ice Cream rolled in Rainbow & Chocolate Sprinkles & Crushed Oreo Pieces (passed)</li>
+                            <li>Fresh Fruit Display topped with Berries</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 ">
+                        <ul class="menu-items">
+                            
+                            <li>Pull Apart Caramel Loaf (Monkey Bread) served warm</li>
+                            <li>Assorted Mini Shooters: Key Lime Pie, Apple Pie, Smores, and Oreo Mousse</li>
+                            <li><strong>To-Go Snack –</strong> Soft Pretzels in bags</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- End Sample 1-->
+
+
+
+
+
+      </div>
+    </section><!-- End Menus Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

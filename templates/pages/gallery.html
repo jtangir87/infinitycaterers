@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main id="main">
+
+    <!-- ======= Our Portfolio Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Gallery</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Our Gallery</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Our Portfolio Section -->
+
+<!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="gallery-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-wedding">Weddings</li>
+              <li data-filter=".filter-mitzvah">Mitzvahs</li>
+              <li data-filter=".filter-private">Private Parties</li>
+              <li data-filter=".filter-corporate">Corporate</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row gallery-container">
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-wedding">
+            <div class="gallery-wrap">
+                <img src="{% static 'img/gallery/wedding-plated-salad-course.jpg' %}" class="img-fluid" alt="infinity caterers wedding plated salad">
+                <div class="gallery-info">
+                    <div class="gallery-links">
+                    <a href="{% static 'img/gallery/wedding-plated-salad-course.jpg' %}" data-gall="galleryGallery" class="venobox"><i class="bx bx-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-private">
+            <div class="gallery-wrap">
+                <img src="{% static 'img/gallery/private-party-appetizers-1.jpg' %}" class="img-fluid" alt="infinity caterers private party appetizers">
+                <div class="gallery-info">
+                    <div class="gallery-links">
+                    <a href="{% static 'img/gallery/private-party-appetizers-1.jpg' %}" data-gall="galleryGallery" class="venobox"><i class="bx bx-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-wedding">
+            <div class="gallery-wrap">
+                <img src="{% static 'img/gallery/wedding-flat-bread-pizza-appetizers.jpg' %}" class="img-fluid" alt="infinity caterers wedding flat bread pizza appetizer">
+                <div class="gallery-info">
+                    <div class="gallery-links">
+                    <a href="{% static 'img/gallery/wedding-flat-bread-pizza-appetizers.jpg' %}" data-gall="galleryGallery" class="venobox"><i class="bx bx-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-private">
+            <div class="gallery-wrap">
+                <img src="{% static 'img/gallery/private-party-appetizers-2.jpg' %}" class="img-fluid" alt="infinity caterers private party appetizers">
+                <div class="gallery-info">
+                    <div class="gallery-links">
+                    <a href="{% static 'img/gallery/private-party-appetizers-2.jpg' %}" data-gall="galleryGallery" class="venobox"><i class="bx bx-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+
+  </main><!-- End #main -->
+
+
+
+{% endblock content %}

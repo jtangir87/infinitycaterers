@@ -16,6 +16,11 @@ urlpatterns = [
     path(
         "venues", TemplateView.as_view(template_name="pages/venues.html"), name="venues"
     ),
+    path(
+        "gallery",
+        TemplateView.as_view(template_name="pages/gallery.html"),
+        name="gallery",
+    ),
     ## MENUS ##
     path(
         "menus/wedding",
@@ -26,6 +31,11 @@ urlpatterns = [
         "menus/mitzvah",
         TemplateView.as_view(template_name="pages/menus/mitzvah.html"),
         name="menu_mitzvah",
+    ),
+    path(
+        "menus/private-party",
+        TemplateView.as_view(template_name="pages/menus/private.html"),
+        name="menu_private",
     ),
 ]
 

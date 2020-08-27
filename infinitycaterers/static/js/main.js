@@ -149,10 +149,6 @@
 
   // Menus isotope and filter
   $(window).on('load', function () {
-    var menuIsotope = $('.menu-container').isotope({
-      layoutMode: 'fitRows',
-      filter: ".filter-sample1",
-    });
     var galleryIsotope = $('.gallery-container').isotope({
       layoutMode: 'fitRows',
     });
@@ -167,6 +163,24 @@
     });
 
   });
+
+  $(window).on('load', function () {
+    var menuIsotope = $('.menu-container').isotope({
+      layoutMode: 'fitRows',
+      filter: ".filter-sample1",
+    });
+    $('#menu-flters li').on('click', function () {
+      $("#menu-flters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+      menuIsotope.isotope({
+        filter: $(this).data('filter')
+      });
+      aos_init();
+    });
+
+  });
+
 
   // Portfolio details carousel
   $(".portfolio-details-carousel").owlCarousel({

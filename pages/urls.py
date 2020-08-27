@@ -14,9 +14,6 @@ urlpatterns = [
         name="about_us",
     ),
     path(
-        "venues", TemplateView.as_view(template_name="pages/venues.html"), name="venues"
-    ),
-    path(
         "gallery",
         TemplateView.as_view(template_name="pages/gallery.html"),
         name="gallery",
@@ -36,6 +33,16 @@ urlpatterns = [
         "menus/private-party",
         TemplateView.as_view(template_name="pages/menus/private.html"),
         name="menu_private",
+    ),
+
+    ## VENUES ##
+    path(
+        "venues", TemplateView.as_view(template_name="pages/venues/venues_list.html"), name="venues"
+    ),
+    path(
+        "venues/society-hill-dance-academy",
+        TemplateView.as_view(template_name="pages/venues/shda.html"),
+        name="venue_shda",
     ),
 ]
 

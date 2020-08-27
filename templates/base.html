@@ -170,17 +170,9 @@
 
   <!-- Template Main JS File -->
   <script src="{% static 'js/main.js' %}"></script>
-  <script>
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("nav-logo").style.maxHeight = "40px";
-      } else {
-        document.getElementById("nav-logo").style.maxHeight = "90px";
-      }
-    }
-  </script>
+{% block footscript %}
+  
+{% endblock footscript %}
 </body>
 
 </html>

@@ -1378,6 +1378,10 @@ section {
 
 .portfolio .portfolio-item img {
   transition: all 0.3s ease-in-out;
+  width: 350px;
+  height: 225px;
+  object-fit: cover;
+
 }
 
 .portfolio .portfolio-item .portfolio-info {
@@ -1400,8 +1404,8 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info a i {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 28px;
+  color: rgba(255, 255, 255);
+  font-size: 48px;
   transition: 0.3s;
 }
 

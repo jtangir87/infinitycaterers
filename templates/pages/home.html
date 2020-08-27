@@ -269,3 +269,17 @@
 
   
 {% endblock content %}
+
+{% block footscript %}
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("nav-logo").style.maxHeight = "40px";
+    } else {
+      document.getElementById("nav-logo").style.maxHeight = "90px";
+    }
+  }
+</script>
+{% endblock footscript %}

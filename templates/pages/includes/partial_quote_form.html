@@ -1,5 +1,5 @@
 {% load bootstrap4 %}
-{% bootstrap_javascript jquery='full' %}
+
 {{quote_form.media}}
 <form method="POST" action="{% url 'request_quote' %}" class="js-quote-request-form" id="quoteForm">
   {% csrf_token %}

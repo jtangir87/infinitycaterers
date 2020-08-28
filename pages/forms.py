@@ -26,4 +26,4 @@ class RequestQuoteForm(forms.Form):
     event_date = forms.DateField(
         widget=DatePickerInput(format="%m/%d/%Y"), label="Event Date"
     )
-    event_type = forms.ChoiceField(choices=EVENT_TYPE_CHOICES)
+    event_type = forms.ChoiceField(choices=EVENT_TYPE_CHOICES, label="Event Type")

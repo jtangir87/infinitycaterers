@@ -75,25 +75,28 @@
   {% block content %}
     
   {% endblock content %}
-
+<div class="modal fade" id="modal-base">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    </div>
+  </div>
+</div>
   <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
-    {% comment %} <div class="footer-newsletter">
+    <div class="footer-newsletter">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          <div class="col-lg-6 text-center">
+            <button data-url="{% url 'request_quote' %}" class="btn btn-lg btn-primary js-quote-request">Request a Quote</button>
           </div>
           <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+            <h4>Speak with one of our friendly event specialists to get a quote for your upcoming celebration!</h4>
           </div>
+
         </div>
       </div>
-    </div> {% endcomment %}
+    </div> 
 
     <div class="footer-top">
       <div class="container">
@@ -170,6 +173,7 @@
 
   <!-- Template Main JS File -->
   <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
 {% block footscript %}
   
 {% endblock footscript %}

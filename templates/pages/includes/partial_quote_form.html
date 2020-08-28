@@ -1,0 +1,18 @@
+{% load bootstrap4 %}
+{% bootstrap_javascript jquery='full' %}
+{{quote_form.media}}
+<form method="POST" action="{% url 'request_quote' %}" class="js-quote-request-form" id="quoteForm">
+  {% csrf_token %}
+  <div class="modal-header">
+    <h4 class="modal-title">Request a Quote</h4>
+  </div>
+  <div class="modal-body">
+    {% bootstrap_form_errors quote_form %}
+    {% bootstrap_form quote_form %}
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    {% bootstrap_button "Schedule" button_type="submit" button_class="btn-primary"%}
+  </div>
+</form>

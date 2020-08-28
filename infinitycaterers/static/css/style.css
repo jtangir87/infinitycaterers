@@ -636,6 +636,7 @@ section {
 # Our Services
 --------------------------------------------------------------*/
 .services {
+  padding-top: 0px;
   padding-bottom: 20px;
 }
 
@@ -2426,11 +2427,11 @@ section {
 
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #0d2735;
+  background: #015380;
 }
 
 #footer .footer-newsletter h4 {
-  font-size: 24px;
+  font-size: 20px;
   margin: 0 0 20px 0;
   padding: 0;
   line-height: 1;
@@ -2445,6 +2446,19 @@ section {
   position: relative;
   border-radius: 50px;
 }
+
+#footer .footer-newsletter button {
+  background-color: #f3ce3c;
+  border-color: #f3ce3c;
+  color: black;
+}
+
+#footer .footer-newsletter button:hover {
+  background-color: #006ba6;
+  border-color: #006ba6;
+  color: white;
+}
+
 
 #footer .footer-newsletter form input[type="email"] {
   border: 0;

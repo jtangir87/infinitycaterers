@@ -1,0 +1,8 @@
+NEW QUOTE REQUEST
+
+Name: {{name}}
+Email: {{email}}
+Phone: {{phone}}
+
+Event Date: {{event_date}}
+Event Type: {{event_type}}

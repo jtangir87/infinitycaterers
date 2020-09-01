@@ -37,7 +37,7 @@ def request_quote(request):
                 "name": name,
                 "email": email,
                 "phone": form.cleaned_data["phone"],
-                "event_date": form.cleaned_data["requested_date"],
+                "event_date": form.cleaned_data["event_date"],
                 "event_type": form.cleaned_data["event_type"],
             }
 

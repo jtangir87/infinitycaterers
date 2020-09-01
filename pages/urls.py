@@ -46,5 +46,20 @@ urlpatterns = [
         TemplateView.as_view(template_name="pages/venues/shda.html"),
         name="venue_shda",
     ),
+    path(
+        "venues/platform-thirty",
+        TemplateView.as_view(template_name="pages/venues/platform_thirty.html"),
+        name="venue_platform_thirty",
+    ),
+    path(
+        "venues/beat-street",
+        TemplateView.as_view(template_name="pages/venues/beat_street.html"),
+        name="venue_beat_street",
+    ),
+    path(
+        "venues/or-ami",
+        TemplateView.as_view(template_name="pages/venues/or_ami.html"),
+        name="venue_or_ami",
+    ),
 ]
 

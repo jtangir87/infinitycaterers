@@ -1747,6 +1747,12 @@ section {
   margin-bottom: 30px;
 }
 
+.gallery-item img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
 .gallery #gallery-flters {
   padding: 0;
   margin: 0 auto 25px auto;
@@ -2630,3 +2636,8 @@ section {
   background-size: cover;
 }
 }
+
+.vbox-content {
+  height: 90%;
+}
+

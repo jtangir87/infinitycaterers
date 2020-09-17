@@ -1,0 +1,773 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main id="main">
+
+    <!-- ======= Our Menus Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Informal Event Menus</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Menus</li>
+            <li>Informal Events</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Our Menus Section -->
+
+    <!-- ======= Menus Section ======= -->
+    <section class="menu" id="menu">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="menu-flters">
+
+              <li data-filter=".filter-sample1" class="filter-active">Breakfast</li>
+              <li data-filter=".filter-wraps">Wraps</li>
+              <li data-filter=".filter-bagged">Bagged Lunches</li>
+              <li data-filter=".filter-buffets">Buffets</li>
+              <li data-filter=".filter-salads">Salads</li>
+              <br>
+              <li data-filter=".filter-hot">Hot Meals</li>
+              <li data-filter=".filter-pasta">Pasta Buffets</li>
+              <li data-filter=".filter-apps">Stationary Appetizers</li>
+              <li data-filter=".filter-desserts">Desserts</li>
+              <li data-filter=".filter-drinks">Drinks</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+       
+
+          <div class="col-lg-6 menu-item filter-sample1">
+            <div class="menu-content">
+              <a href="">FRESH FRUIT SALAD</a><span>$3.50 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              The freshest fruit topped with Berries of the season.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-sample1">
+            <div class="menu-content">
+              <a href="">COFFEE & TEA SERVICE</a><span>$2.50 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              Available upon request
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-sample1">
+            <div class="menu-content">
+              <a href="">HOT BREAKFAST SANDWICHES OR WRAPS</a><span>$5.00 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              CHOICE OF: Egg & Cheese • Bacon, Egg & Cheese • Sausage, Egg & Cheese on Toasted English Muffin, Fresh Baked Croissant, or Honey Whole Wheat Wrap</br> (Egg Whites Available - $1.00 per person additional)
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 menu-item filter-sample1">
+            <div class="menu-content">
+              <a href="">SMOKED FISH DISPLAY</a><span>$17.50 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              Kippered Salmon, White Fish Salad, Sliced Vegetables, Sweet Muenster and American Cheeses with fresh bagels and Russian Pumpernickel 
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-sample1">
+            <div class="menu-content">
+              <a href="">CONTINENTAL BREAKFAST</a><span>$9.25 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              Assorted Homemade Muffins, Assorted Fruit & Cheese Danish, Assorted Bagels, Fresh Sliced Fruit, Mini Croissants. All served with Cream Cheese, Sweet Creamy Butter, Assorted Preserves, Orange Juice, Apple Juice, and Grapefruit Juice
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 menu-item filter-sample1">
+            <div class="menu-content">
+              <a href="">CHALLAH FRENCH TOAST</a><span>$5.50 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              Accompanied with Maple Syrup.</br> (Add Banana Nut Compote - $2.00 per person additional)
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 menu-item filter-sample1">
+            <div class="menu-content">
+              <a href="">CRISPY BACON & SAUSAGE LINKS</a><span>$3.75 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              Turkey Bacon & Turkey Sausage available upon request
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-sample1">
+            <div class="menu-content">
+              <a href="">BREAKFAST QUICHE & FRITTATA </a><span>$5.50 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              Four Cheese and Herb, Spinach, Caramelized Onion & Cheese, Bacon & Cheese, Grilled Vegetable (choose 2)
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-sample1">
+            <div class="menu-content">
+              <a href="">HOMESTYLE SLICED RED BLISS POTATOES </a><span>$3.75 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              With Caramelized Onions
+            </div>
+          </div>
+
+          <div class="col-lg-12 menu-item filter-wraps">
+            <div class="menu-content">
+              <a href="">INFINITY WRAPS  </a><span>$9.50 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              1 wrap per person cut in half for a beautiful display. Included with your Wrap Tray is your choice of House Penne Pasta Salad, Homemade Cole Slaw, Dijon Red Bliss Potato Salad, Caesar Salad, or Tossed Salad. (choose 2 of our low fat items)
+            </div>
+            <h5 class="text-center" style="padding-top:20px;">WRAP CHOICES</h5>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-wraps">
+            <div class="menu-content">
+              <a href="">GRILLED CHICKEN CAESAR WRAP  </a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              With romaine lettuce, shaved parmesan and a homemade caesar dressing
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 menu-item filter-wraps">
+            <div class="menu-content">
+              <a href="">ITALIAN  </a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              Pepper Ham, Genoa Salami, Marinated Roasted Peppers, Imported Provolone Cheese with Bibb Lettuce & a touch of Olive Oil.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-wraps">
+            <div class="menu-content">
+              <a href="">ROASTED TURKEY BREAST </a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               With light Havarti Cheese, Marinated Roasted peppers, Bibb Lettuce & Honey Mustard.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-wraps">
+            <div class="menu-content">
+              <a href="">ROAST BEEF </a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               Provolone Cheese, Roasted Peppers, Bibb Lettuce & Horseradish Dressing.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-wraps">
+            <div class="menu-content">
+              <a href="">FRESH MARINATED GRILLED CHICKEN BREAST </a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               With Roasted Carrots & Squash, Bibb Lettuce & Lemon Basil Aioli.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-wraps">
+            <div class="menu-content">
+              <a href="">GRILLED MARINATED VEGETABLE </a><span></span>
+            </div>
+            <div class="menu-ingredients">
+                Grilled Red and Yellow Peppers, Portobello Mushrooms, Zucchini, Caramelized Onions and Balsamic Glaze with Leaf Lettuce.
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 menu-item filter-wraps">
+            <div class="menu-content">
+              <a href="">ALL WHITE TUNA</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+                With Seasoned Mayonnaise, Celery, Roasted Peppers & Bibb Lettuce.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-wraps">
+            <div class="menu-content">
+              <a href="">ASIAN GRILLED CHICKEN</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+                With Napa Cabbage, wonton crisps,  Julienne Carrots & Spicy Thai Peanut Sauce.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-wraps">
+            <div class="menu-content">
+              <a href="">BUFFALO CHICKEN</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+                With Bibb Lettuce & Blue Cheese Dressing.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-bagged">
+            <div class="menu-content">
+              <a href="">SANDWICH BOX</a><span>$14.00 per person</span>
+            </div>
+            <div class="menu-ingredients">
+                <strong>Choice of 3 Wrap Selections</strong><br>Includes: Red Bliss Potato Salad or House Penne Pasta Salad, Double Fudge Chocolate Brownie or Double Chocolate Chip Cookie, Regular or Diet Soda, Napkin, Utensils, Wet Nap & Mint Candy
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-bagged">
+            <div class="menu-content">
+              <a href="">SALAD BOX</a><span>$14.00 per person</span>
+            </div>
+            <div class="menu-ingredients">
+                <strong>Choice of 3 Salad Selections</strong><br>Includes: Red Bliss Potato Salad or House Penne Pasta Salad, Double Fudge Chocolate Brownie or Double Chocolate Chip Cookie, Regular or Diet Soda, Napkin, Utensils, Wet Nap & Mint Candy
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-buffets">
+            <div class="menu-content">
+              <a href="">MINI SANDWICH BUFFET</a><span>$7.25 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              Served as hors d'oeuvres or for lunch. Selection of Roast Breast of Turkey, Roast Beef, Country Glazed Ham, Tuna Salad, Egg Salad or Fall Harvest Chicken Salad. 2 sandwiches per person.
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-content">
+                <a href="">MEAT AND CHEESE BUFFET </a><span>$10.50 per person</span>
+                </div>
+                <div class="menu-ingredients">
+                <strong>Choice of 3 Meats</strong><br>
+                This buffet is a wonderful lunch or dinner in the office or for a special event. Assortment of Roast Beef, Roasted Turkey Breast, Natural Roasted Turkey Breast (right off the bird - $1 per person extra), Smoked Turkey, Country Glazed Ham, Imported Genoa Salami, Swiss & Havarti Cheeses. This buffet also includes Red Bliss Potato Salad, Homemade Cole Slaw or House Penne Pasta Salad (Choose 2). Fresh Sliced Tomatoes, Pickles, Herb Mayonnaise, Honey Mustard, Assorted Rolls & Breads.
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-content">
+                <a href="">SANDWICH BUFFET </a><span>$9.50 per person</span>
+                </div>
+                <div class="menu-ingredients">
+                Infinity makes it so easy and so good! Assorted sandwiches already prepared and beautifully arranged in a wicker basket tray. Platter also includes Red Bliss Potato Salad, Homemade Cole Slaw or House Penne Pasta Salad, Caesar Salad, or Tossed Salad (Choose 2), Served on Fresh Breads & Rolls.
+                </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 menu-item filter-buffets">
+            <div class="menu-header text-center">
+              <a href="">SANDWICH SELECTIONS</a>
+            </div>
+            <div class="menu-ingredients">
+              Plain sandwiches with NO additions are available upon request.
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-content">
+                <a href="">ROAST BEEF </a><span></span>
+                </div>
+                <div class="menu-ingredients">
+                 With Provolone Cheese & Horseradish Dressing.
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-content">
+                <a href="">COUNTRY GLAZED HAM </a><span></span>
+                </div>
+                <div class="menu-ingredients">
+                    With Swiss Cheese and a touch of Dijonaise.                
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-content">
+                <a href=""><i class="fas fa-heart"></i> FRESH TURKEY BREAST </a><span></span>
+                </div>
+                <div class="menu-ingredients">
+                    With Havarti Cheese, Roasted Marinated Peppers, Honey Mustard & Bibb Lettuce.             
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-content">
+                <a href=""><i class="fas fa-heart"></i> GRILLED VEGETABLES </a><span></span>
+                </div>
+                <div class="menu-ingredients">
+                    With a Balsamic Glaze.          
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-content">
+                <a href=""><i class="fas fa-heart"></i> GRILLED CHICKEN </a><span></span>
+                </div>
+                <div class="menu-ingredients">
+                    With Roasted Veggies and Lemon Basil Aioli         
+                </div>
+            </div>
+
+
+            <div class="menu-item">
+                <div class="menu-content">
+                <a href="">TUNA SALAD  </a><span></span>
+                </div>
+                <div class="menu-ingredients">
+                    All White Tuna with Celery & Seasoned Mayonnaise.       
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-content">
+                <a href="">FALL HARVEST CHICKEN SALAD  </a><span></span>
+                </div>
+                <div class="menu-ingredients">
+                    With sliced figs, dried apricots, sun dried cherries and fresh herbs     
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-content">
+                <a href=""><i class="fas fa-heart"></i> LOW FAT TUNA SALAD </a><span></span>
+                </div>
+                <div class="menu-ingredients">
+                    With Carrots & Chives.   
+                </div>
+            </div>
+          </div>
+            <!-- Salads -->
+          <div class="col-lg-12 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="">SALAD BUFFET  </a><span>$10.75 per person</span>
+            </div>
+            <div class="menu-ingredients">
+                Infinity invites you to choose 3 homemade salads accompanied by assorted Rolls & Breads.            
+            </div>
+            <h5 class="text-center" style="padding-top:20px;">SALAD SELECTIONS</h5>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="">CLASSIC CAESAR SALAD</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               Tossed with Fresh Baked Croutons and Infinity's Special Caesar Dressing. (Add Grilled Chicken - $3.25)
+            </div>
+          </div>
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="">SESAME NOODLE SALAD</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               with Spicy Peanuts, Celery, Scallions, Carrots & Red Pepper tossed in a Thai Peanut Sesame Dressing.
+            </div>
+          </div>
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="">OLD FASHIONED CHICKEN SALAD</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               All White Chicken Breast tossed in a Seasoned Mayonnaise with Celery and a touch of Carrot.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="">FALL HARVEST CHICKEN SALAD</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               with sliced figs, dried apricots, sun dried cherries and fresh herbs
+            </div>
+          </div>
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="">TUNA SALAD</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               Beautiful all white Tuna tossed lightly in Mayonnaise with Celery.
+            </div>
+          </div>
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="">ASIAN COLESLAW</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               Red & Green Cabbage, Julienne Carrots, tossed in a Teriyaki Rice Wine Vinaigrette topped with Fried Noodles.
+            </div>
+          </div>
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="">SZECHUAN SALAD</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               with Broccoli Spears, Toasted Peanuts, Sugar Snap Peas & Roasted Peppers tossed in a Soy Ginger Teriyaki Sauce.
+            </div>
+          </div>
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="">TURKEY CLUB SALAD</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               Fresh Roasted Turkey, Crispy Bacon, Julienne Carrots, Sliced Tomatoes & Homemade Croutons set atop Fresh Greens.
+            </div>
+          </div>
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href=""><i class="fas fa-heart"></i> QUINOA AND ISRAELI COUSCOUS SALAD</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               with sliced figs, diced cucumbers and grape tomatoes tossed in an orange mint vinaigrette 
+            </div>
+          </div>
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="">MEXICAN FIESTA SALAD</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               Spicy Cheddar, Diced Tomatoes, Sour Cream, Salsa, Black Olives & Crispy Tortilla Strips set atop Fresh Greens.
+            </div>
+          </div>
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="">HOUSE PENNE PASTA SALAD</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               Penne Pasta with Fresh Cut Vegetables, Sun-Dried Tomatoes and Fresh Basil tossed in a Cracked Peppercorn Parmesan Dressing.
+            </div>
+          </div>
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="">FRESH MOZZARELLA & TOMATO SALAD</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               Ripe Cherry Tomatoes, Fresh Mozzarella Cheese, Scallions & Basil all tossed lightly in Balsamic-Garlic Vinaigrette.
+            </div>
+          </div>
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href=""><i class="fas fa-heart"></i> HONEY MUSTARD CHICKEN SALAD</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               Baked Chicken with Fresh Spinach, Carrots, tossed in a Honey Mustard Dressing. (almost no fat)
+            </div>
+          </div>
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="">TRI COLORED TORTELLINI SALAD</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+               with Extra Virgin Olive Oil, Fresh Herbs and Lemon
+            </div>
+          </div>
+
+        <!-- Hot Meals-->
+        <div class="col-lg-6 menu-item filter-hot">
+            <div class="menu-content">
+              <a href="">JACK DANIELS BBQ CHICKEN</a><span>$14.25 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              Served with Rice Selection & Tossed Salad 
+            </div>
+          </div>
+        <div class="col-lg-6 menu-item filter-hot">
+            <div class="menu-content">
+              <a href="">SLICED DIJON & PEPPERCORN CRUSTED CENTER CUT FILLET</a><span>$19.75 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              With Pommery Horseradish Sauce accompanied with Caesar Salad, Rice selection, Rolls & Butter
+            </div>
+          </div>
+        <div class="col-lg-6 menu-item filter-hot">
+            <div class="menu-content">
+              <a href="">CHICKEN TENDERS</a><span>$12.50 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              With Honey Mustard and Barbecue Sauces, Caesar Salad, Seasoned Waffle Fries.
+            </div>
+          </div>
+        <div class="col-lg-6 menu-item filter-hot">
+            <div class="menu-content">
+              <a href="">BUFFALO STYLE CHICKEN WINGS</a><span>$11.75 per person</span>
+            </div>
+            <div class="menu-ingredients">
+                Choice of 3 Sauces - Teriyaki, BBQ & Spicy Buffalo<br>
+                With Garden Salad, Celery & Carrot Sticks & Blue Cheese Dressing
+            </div>
+          </div>
+        <div class="col-lg-6 menu-item filter-hot">
+            <div class="menu-content">
+              <a href="">POMMERY MUSTARD - GLAZED CHICKEN</a><span>$13.75 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              With Tossed Salad and Rice Selection
+            </div>
+          </div>
+        <div class="col-lg-6 menu-item filter-hot">
+            <div class="menu-content">
+              <a href="">HOT ROASTED TURKEY and/or GARLIC ROAST BEEF AU JUS</a><span>$13.50 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              With Garlic Whipped Mashed Potatoes, Tossed Salad
+            </div>
+          </div>
+        <div class="col-lg-6 menu-item filter-hot">
+            <div class="menu-content">
+              <a href="">ORANGE SESAME THAI SALMON or PESTO CRUSTED SALMON</a><span>$17.25 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              With Tossed Salad and Rice Selection
+            </div>
+          </div>
+        <div class="col-lg-6 menu-item filter-hot">
+            <div class="menu-content">
+              <a href="">PHILLY BEEF & CHICKEN STEAK BAR</a><span>$14.00 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              Accompanied with Fried Onions, Marinara Sauce, American Cheese, Pickles, Hot Peppers & Ketchup with Fresh Amoroso Rolls, Tossed Salad & Potato Chips.
+            </div>
+          </div>
+
+        <!-- Pasta Buffets -->
+        <div class="col-lg-12 menu-item filter-pasta">
+            <div class="menu-header text-center">
+              <a href="">Pasta Buffets Include:</a>
+            </div>
+            <div class="menu-ingredients text-center">
+              Garlic Bread or Dinner Rolls with Your Choice of Caesar or Tossed Salad.<br>
+              Also included are Paper Products.
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-pasta">
+            <div class="menu-content text-center">
+              <a href="">TRI-COLORED RAVIOLI or TORTELLINI</a><span>$12.75 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              Topped with Tomato Basil Blush Sauce
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-pasta">
+            <div class="menu-content text-center">
+              <a href="">TRADITIONAL MEAT/VEGETABLE LASAGNA</a><span>$13.75 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              Layers of Pasta, Parmesan & Mozzarella Cheeses, with a fresh Basil Marinara.
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-pasta">
+            <div class="menu-content text-center">
+              <a href="">SAUTEED CHICKEN MARSALA</a><span>$13.75 per person</span>
+            </div>
+            <div class="menu-ingredients">
+              With Asparagus Tips, Shiitake Mushrooms, in a Marsala Wine Sauce. Accompanied with Rice Selection and Caesar Salad.
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-pasta">
+            <div class="menu-content text-center">
+              <a href="">PASTA PRIMAVERA</a><span>$12.75 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               With Fresh Garden Vegetables tossed in a Light White Wine & Garlic Sauce. With shaved parmesan cheese
+            </div>
+        </div>
+
+        <!-- Stationary Appetizers -->
+
+        <div class="col-lg-6 menu-item filter-apps">
+            <div class="menu-content text-center">
+              <a href="">CRUDITE</a><span>$4.25 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               A Fresh assortment of Vegetables such as Broccoli, Carrots, Celery, Red & Yellow Peppers, Zucchini, Cucumber, all beautifully arranged in our wicker basket with your choice of dips.
+            </div>
+        </div>
+
+        <div class="col-lg-6 menu-item filter-apps">
+            <div class="menu-content text-center">
+              <a href="">ANTIPASTO DISPLAY</a><span>$9.50 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               Includes Marinated Roasted Red peppers, Assorted Kalamata Olives, Manchego Cheese, Extra Sharp Provolone, Fresh Basil Mozzarella Cheese, Pepperoni, Genoa Salami & Rosemary Focaccia.
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-apps">
+            <div class="menu-content text-center">
+              <a href="">CHEESE DISPLAY</a><span>$5.50 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               Assorted Imported & Domestic Cheeses with Ripe Red & Green Grapes, Sliced Pepperoni, Fig Jam, Nuts,  Champagne Mustard, Carrs Crackers & Fresh Bread Slices.
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-apps">
+            <div class="menu-content text-center">
+              <a href="">CRUDITE & CHEESE DISPLAY</a><span>$8.25 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               Combination for Crudite and Cheese displays.
+            </div>
+        </div>
+
+        <div class="col-lg-6 menu-item filter-apps">
+            <div class="menu-content text-center">
+              <a href="">TASTE OF THE MEDITERRANEAN</a><span>$3.75 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               Garlic Hummus, Lemon Basil Hummus, Olives, Baba Ganoush & Warm Grilled Pita.
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-apps">
+            <div class="menu-content text-center">
+              <a href="">TEX-MEX LAYERED TORTE</a><span>$3.00 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               Refried Beans, Sour Cream, Guacamole, Salas, Mexican Cheddar, Shredded Lettuce & Black Olives served with White Corn Tortilla Chips.
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-apps">
+            <div class="menu-content text-center">
+              <a href="">CHAMPAGNE BAKED BRIE</a><span>$3.50 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               Accompanied with French Bread Croustades and garnished with Strawberries and Red & Green Grapes
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-apps">
+            <div class="menu-content text-center">
+              <a href="">GRILLED VEGETABLE DISPLAY</a><span>$4.75 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               To include Asparagus, Red & Yellow Peppers, Zucchini, Portobello Mushrooms, Caramelized Onions & Carrots accompanied with Rosemary Focaccia Bread.
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-apps">
+            <div class="menu-content text-center">
+              <a href="">DIM SUM DISPLAY</a><span>$9.50 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               Includes Chicken & Vegetable Shu Mai, Moo Shu Duck Wraps & Assorted Sushi accompanied with Pickled Ginger, Wasabi & Soy Sauces.
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-apps">
+            <div class="menu-content text-center">
+              <a href="">SLICED FRUIT</a><span>$3.50 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               The Freshest Sliced Fruits of the season topped with mixed berries
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-apps">
+            <div class="menu-content text-center">
+              <a href="">MINI WRAP DISPLAY</a><span>$5.25 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               Assorted varieties of International ingredients wrapped in 6-inch gourmet-flavored Tortillas.
+            </div>
+        </div>
+        <div class="col-lg-12 menu-item filter-apps">
+            <div class="menu-header text-center">
+              <a href="">CHOICES OF DIPS:</a>
+            </div>
+            <div class="menu-ingredients text-center">
+            • Pommery & Horseradish with Fresh Chive • Blue Cheese Dressing • Spinach Feta •
+            Garden Vegetable & Herb • Honey Mustard • Sun Dried Tomato
+
+            </div>
+        </div>
+    <!-- Desserts -->
+        <div class="col-lg-6 menu-item filter-desserts">
+            <div class="menu-content text-center">
+              <a href="">COOKIE TRAY</a><span>$2.00 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               An assortment of home-baked cookies such as our famous Oatmeal Raisin, Double Chocolate Chip, White Chocolate Macadamia Cookies - All are home-baked! Add Double Fudge Brownies for $1.00 extra.
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-desserts">
+            <div class="menu-content text-center">
+              <a href="">HAVE YOUR CAKE AND EAT IT TOO! </a><span>$3.75 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               Assorted slices of home-baked cakes and our famous Double Fudge Brownies. (does not include cannolis)
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-desserts">
+            <div class="menu-content text-center">
+              <a href="">HOMEMADE CHOCOLATE CHIP MINI CANNOLIS </a><span>$2.25 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               Double Cream - Old Style!
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-desserts">
+            <div class="menu-content text-center">
+              <a href="">MINI EUROPEAN PASTRY DISPLAY </a><span>$5.50 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               5 Different Selections (Call for options)
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-desserts">
+            <div class="menu-content text-center">
+              <a href="">SLICED SEASONAL FRESH FRUIT</a><span>$3.50 per person</span>
+            </div>
+            <div class="menu-ingredients">
+               The Freshest Sliced Fruits of the season topped with mixed berries
+            </div>
+        </div>
+
+    <!-- Drinks -->
+
+        <div class="col-lg-6 menu-item filter-drinks">
+            <div class="menu-content text-center">
+              <a href="">SPRING WATER</a><span>$1.25 per person</span>
+            </div>
+        </div>
+
+        <div class="col-lg-6 menu-item filter-drinks">
+            <div class="menu-content text-center">
+              <a href="">ASSORTED REGULAR & DIET SODA CANS</a><span>$1.50 per person</span>
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-drinks">
+            <div class="menu-content text-center">
+              <a href="">ICED TEA & DIET ICED TEA</a><span>$1.75 per person</span>
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-drinks">
+            <div class="menu-content text-center">
+              <a href="">ASSORTED FRUIT JUICES</a><span>$1.75 per person</span>
+            </div>
+        </div>
+
+
+
+      </div>        
+
+      <ul id="menuFooter">
+        <li>* 20 person minimum per order</li>
+        <li>* Free delivery for orders over $125 within 10 miles of Philadelphia</li>
+            <li><i class="fas fa-heart"></i> Healthier Choice -
+                This symbol represents a healthier way of cooking; lower in fats, but we promise - still yummy!
+                Low Fat Mayonnaise, Low Fat Dijon Cole Slaw and/or Low Fat Red Bliss Potato Salad can be substituted at any time.
+            </li>
+            
+        </ul>
+    </section><!-- End Menus Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

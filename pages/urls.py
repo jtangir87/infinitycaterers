@@ -35,6 +35,11 @@ urlpatterns = [
         TemplateView.as_view(template_name="pages/menus/private.html"),
         name="menu_private",
     ),
+    path(
+        "menus/informal-event",
+        TemplateView.as_view(template_name="pages/menus/informal.html"),
+        name="menu_informal",
+    ),
     ## VENUES ##
     path(
         "venues",

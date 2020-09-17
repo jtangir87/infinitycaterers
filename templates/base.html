@@ -28,7 +28,8 @@
   <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
-  
+  <script src="https://kit.fontawesome.com/c47990e7cb.js" crossorigin="anonymous"></script>
+
 
   <!-- Template Main CSS File -->
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
@@ -64,7 +65,7 @@
               <li><a href="{% url 'menu_wedding' %}">Weddings</a></li>
               <li><a href="{% url 'menu_mitzvah' %}">Mitzvahs</a></li>
               <li><a href="{% url 'menu_private' %}">Private Events</a></li>
-              <li><a href="#">Corporate</a></li>
+              <li><a href="{% url 'menu_informal' %}">Informal Events</a></li>
             </ul>
           </li>
           <li {% if request.resolver_match.view_name == 'gallery' %}class="active"{% endif %}><a href="{% url 'gallery' %}">Gallery</a></li>

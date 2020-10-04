@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
+
+{% block og_tags %}
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.infinitycaterers.com" />
+	<meta property="og:title" content="Infinity Caterers" />
+	<meta property="og:description" content="Full service event catering company in Montgomery County, PA" />
+  <meta property="og:image" content="{% static 'img/infinity-og-img.png' %}" />
+{% endblock og_tags %}
+
 {% block content %}
 
 <!-- ======= Hero No Slider Section ======= -->

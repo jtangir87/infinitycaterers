@@ -24,29 +24,17 @@
       <div class="container">
 
         <div class="row">
+
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="card">
               <div class="card-img">
-                <img src="{% static 'img/venues/society-hill-dance-main.jpg' %}" alt="...">
+                <img src="{% static 'img/venues/lap5.png' %}" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="#">Loft at Passyunk</a></h5>
+                <h5 class="card-title"><a href="{% url 'venue_loft_at_passyunk' %}">Loft At Passyunk</a></h5>
                 <p class="card-text">Set in the quaint and romantic surroundings of the historic Headhouse Square, Society Hill Dance Academy provides you with everything you need to make all your wedding dreams come true.</p>
                 <p class="card-text font-italic">This hidden gem of a venue is  a certified historic Philadelphia building with loads of charm! Located at 2nd & Pine Streets, this venue offers open light filled rooms and has a guest capacity of 150.</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Learn More</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="card">
-              <div class="card-img">
-                <img src="{% static 'img/venues/society-hill-dance-main.jpg' %}" alt="...">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title"><a href="{% url 'venue_shda' %}">Society Hill Dance Academy</a></h5>
-                <p class="card-text">Set in the quaint and romantic surroundings of the historic Headhouse Square, Society Hill Dance Academy provides you with everything you need to make all your wedding dreams come true.</p>
-                <p class="card-text font-italic">This hidden gem of a venue is  a certified historic Philadelphia building with loads of charm! Located at 2nd & Pine Streets, this venue offers open light filled rooms and has a guest capacity of 150.</p>
-                <div class="read-more"><a href="{% url 'venue_shda' %}"><i class="icofont-arrow-right"></i> Learn More</a></div>
+                <div class="read-more"><a href="{% url 'venue_loft_at_passyunk' %}"><i class="icofont-arrow-right"></i> Learn More</a></div>
               </div>
             </div>
 
@@ -96,12 +84,12 @@
                 <img src="{% static 'img/venues/appleford-estate.jpg' %}" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="#">Appleford Estate</a></h5>
+                <h5 class="card-title"><a href="{% url 'venue_appleford' %}">Appleford Estate</a></h5>
                 <p class="card-text">Appleford is best known as the premier Main Line venue for beautiful wedding ceremonies and receptions. The estate has been used as a wedding venue creating lasting memories for more than 40 years.</p>
                 <p class="card-text font-italic">While weddings are a major part of our business, Appleford in Villanova also hosts numerous events and social gatherings throughout the year. Appleford events include corporate dinners, receptions, holiday parties, wine tastings milestone celebrations, showers, and so much more.</p>
                 
                 
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Learn More</a></div>
+                <div class="read-more"><a href="{% url 'venue_appleford' %}"><i class="icofont-arrow-right"></i> Learn More</a></div>
               </div>
             </div>
           </div>
@@ -112,12 +100,12 @@
                 <img src="{% static 'img/venues/industry-main.jpg' %}" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="#">Industry</a></h5>
+                <h5 class="card-title"><a href="{% url 'venue_industry' %}">Industry</a></h5>
                 <p class="card-text">If you are tying the knot, celebrating a mitzvah, life milestone, or planning a holiday party, iNDUSTRY and our team of professional planners are here to ensure your special event is spectacular. Located right outside of Philadelphia in Huntingdon Valley, Pennsylvania.</p>
                 <p class="card-text font-italic">iNDUSTRY is an event space that gives you the creative freedom to mold and shape your event the way you see fit. An open concept floor plan with a modern industrial vibe allows for limitless possibilities. iNDUSTRY was built with you and your guests as the focal point and can accomodate up to 110 guests</p>
                 
                 
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Learn More</a></div>
+                <div class="read-more"><a href="{% url 'venue_industry' %}"><i class="icofont-arrow-right"></i> Learn More</a></div>
               </div>
             </div>
           </div>

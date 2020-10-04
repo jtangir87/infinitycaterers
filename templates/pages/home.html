@@ -9,7 +9,7 @@
         <div class="col-xl-8">
           <h2>Welcome to <span style="color:#f3ce3c">Infinity Caterers</span></h2>
           <p>Where food is an art form and customer satisfaction is our creed</p>
-          <a href="" class="btn-get-started ">Learn More</a>
+          <a href="#services" class="btn-get-started scrollto">Learn More</a>
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@
               <h4 class="title">Weddings</h4>
               <p class="description mb-2">It's all in the details! Our wedding specialist will help guide you every step of the way</p>
                   <a href="{% url 'menu_wedding' %}" class="btn btn-primary mb-2">Menus</a>
-                  <a href="#" class="btn btn-primary mb-2">Photo Gallery</a>
+                  <!-- <a href="#" class="btn btn-primary mb-2">Photo Gallery</a> -->
             </div>
           </div>
 
@@ -38,17 +38,17 @@
               <h4 class="title">Bar/Bat Mitzvahs</h4>
               <p class="description mb-2">Every Mitzvah is unique but with our experience we can make the planning easy!</p>
               <a href="{% url 'menu_mitzvah' %}" class="btn btn-primary mb-2">Menus</a>
-              <a href="#" class="btn btn-primary mb-2">Photo Gallery</a>
+              <!-- <a href="#" class="btn btn-primary mb-2">Photo Gallery</a> -->
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-green">
               <div class="icon"><img src="{% static 'img/home-corp.jpg' %}" class="img-fluid"></div>
-              <h4 class="title">Corporate</h4>
+              <h4 class="title">Informal</h4>
               <p class="description mb-2">On premise or off-site, we are here to make every event spectacular</p>
-              <a href="#" class="btn btn-primary mb-2">Menus</a>
-              <a href="#" class="btn btn-primary mb-2">Photo Gallery</a>
+              <a href="{% url 'menu_informal' %}" class="btn btn-primary mb-2">Menus</a>
+              <!-- <a href="#" class="btn btn-primary mb-2">Photo Gallery</a> -->
             </div>
           </div>
 
@@ -58,7 +58,7 @@
               <h4 class="title">Private Events</h4>
               <p class="description mb-2">From backyard BBQs to extravagant celebrations - Infinity has a menu for you!</p>
               <a href="{% url 'menu_private' %}" class="btn btn-primary mb-2">Menus</a>
-              <a href="#" class="btn btn-primary mb-2">Photo Gallery</a>
+              <!-- <a href="#" class="btn btn-primary mb-2">Photo Gallery</a> -->
             </div>
           </div>
 
@@ -73,8 +73,8 @@
 
         <div class="row">
           <div class="col-lg-6 video-box">
-            <img src="#" class="img-fluid" alt="">
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+            <img src="{% static 'img/team_photo.jpg' %}" class="img-fluid" alt="">
+            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> -->
           </div>
 
           <div class="col-lg-6 d-flex flex-column justify-content-center p-5">

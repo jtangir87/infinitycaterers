@@ -49,8 +49,7 @@ def request_quote(request):
                 "NEW QUOTE REQUEST",
                 content,
                 "{}<{}>".format(name, email),
-                ## @todo SET EMAIL ADDRESS ##
-                ["chad@exteriordd.com", "darren@exteriordd.com"],
+                ["info@infinitycaterers.com"],
                 fail_silently=False,
             )
 

@@ -111,22 +111,21 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Menus</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Venues</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home' %}">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'about_us' %}">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home' %}#services" class="scrollto">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'venues' %}">Venues</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'contact_us' %}">Contact Us</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Venues</h4>
+            <h4>Sample Menus</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Loft at Passyunk</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Platform 30</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Society Hill Dance Academy</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Beat Street HV</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Or Ami</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'menu_wedding' %}">Wedding</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'menu_mitzvah' %}">Mitzvah</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'menu_private' %}">Private Events</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'menu_informal' %}">Informal Events</a></li>
             </ul>
           </div>
 
@@ -156,7 +155,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Infinity Caterers</span></strong>. All Rights Reserved | <a href="http://www.elevatedwebsystems.com" style="text-decoration:none; color:inherit">Web Design & Development</a> by <a href="http://www.elevatedwebsystems.com" target="_blank">Elevated Web Systems</a>
+        &copy; Copyright <strong><span>Infinity Caterers</span></strong>. All Rights Reserved | <a href="https://elevatedwebsystems.com" style="text-decoration:none; color:inherit">Web Design & Development</a> by <a href="https://elevatedwebsystems.com">Elevated Web Systems</a>
       </div>
       
     </div>

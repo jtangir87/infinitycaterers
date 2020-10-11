@@ -1,0 +1,21 @@
+# Group 1
+User-agent: Googlebot
+Disallow: /gallery2/
+Disallow: /about_infinity/
+Disallow: /testimonials/
+Disallow: /photos/
+Disallow: /options/
+Disallow: /menus/private/
+Disallow: /menus/corporate/
+Disallow: /extras/
+Disallow: /sample%20menus/
+
+# Group 2
+User-agent: *
+Allow: /
+Disallow: /gallery2/
+Disallow: /about_infinity/
+Disallow: /testimonials/
+
+
+Sitemap: https://infinitycaterers.com/sitemap.xml

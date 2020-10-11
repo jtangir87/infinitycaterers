@@ -5,6 +5,7 @@ from django.shortcuts import reverse
 class StaticViewSitemap(Sitemap):
     def items(self):
         return [
+            "home",
             "about_us",
             "contact_us",
             "gallery",
@@ -12,12 +13,13 @@ class StaticViewSitemap(Sitemap):
             "menu_mitzvah",
             "menu_private",
             "menu_informal",
+            "venues",
             "venue_loft_at_passyunk",
             "venue_platform_thirty",
             "venue_beat_street",
             "venue_or_ami",
             "venue_industry",
-            # "venue_appleford_estate",
+            "venue_appleford_estate",
         ]
 
     def location(self, item):

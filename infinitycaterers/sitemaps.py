@@ -19,7 +19,7 @@ class StaticViewSitemap(Sitemap):
             "venue_beat_street",
             "venue_or_ami",
             "venue_industry",
-            "venue_appleford_estate",
+            "venue_appleford",
         ]
 
     def location(self, item):

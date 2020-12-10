@@ -1,14 +1,18 @@
+from django.http.response import HttpResponseRedirect
+from django.urls import reverse
 from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.http import JsonResponse
 from django.template.loader import render_to_string
 from django.template.loader import get_template
 from django.core.mail import send_mail
-
+from django.contrib import messages
 
 from .forms import ContactUsForm, RequestQuoteForm
 
 # Create your views here.
+
+
 class HomeView(TemplateView):
     template_name = "pages/home.html"
 
@@ -23,7 +27,32 @@ class ContactUsView(TemplateView):
 
 
 def contact_us_form(request):
-    pass
+    if request.method == "POST":
+        form = ContactUsForm(request.POST or None)
+        if form.is_valid():
+            name = form.cleaned_data["name"]
+            email = form.cleaned_data["email"]
+            context = {
+                "name": name,
+                "email": email,
+                "phone": form.cleaned_data["phone"],
+                "message": form.cleaned_data["message"],
+            }
+
+            ### SEND EMAIL ###
+
+            template = get_template("pages/emails/contact_us.txt")
+            content = template.render(context)
+            send_mail(
+                "NEW CONTACT FORM",
+                content,
+                "{}<{}>".format(name, email),
+                ["info@infinitycaterers.com"],
+                fail_silently=False,
+            )
+            messages.success(
+                request, 'Your form has been submitted. We will be in touch soon!')
+    return HttpResponseRedirect(reverse("contact_us"))
 
 
 def request_quote(request):

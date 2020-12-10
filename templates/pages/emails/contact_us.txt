@@ -1,0 +1,7 @@
+NEW CONTACT FORM SUBMITTED
+
+Name: {{name}}
+Email: {{email}}
+Phone: {{phone}}
+
+Message: {{message}}

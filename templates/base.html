@@ -59,9 +59,9 @@
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
           <li {% if request.resolver_match.view_name == 'home' %}class="active"{% endif %}><a href="{% url 'home' %}">Home</a></li>
-          <li {% if request.resolver_match.view_name == 'about_us' %}class="active"{% endif %}><a href="{% url 'about_us' %}">About Us</a></li>
+         <!-- <li {% if request.resolver_match.view_name == 'about_us' %}class="active"{% endif %}><a href="{% url 'about_us' %}">About Us</a></li>
           <li><a href="{% url 'home' %}#services" class="scrollto">Services</a></li>
-          <li {% if '/menus' in request.path %}class="drop-down active"{% else %} class="drop-down" {% endif %}><a href="">Menus</a>
+          <li {% if '/menus' in request.path %}class="drop-down active"{% else %} class="drop-down" {% endif %}><a href="">Menus</a> 
             <ul>
               <li><a href="{% url 'menu_wedding' %}">Weddings</a></li>
               <li><a href="{% url 'menu_mitzvah' %}">Mitzvahs</a></li>
@@ -70,7 +70,7 @@
             </ul>
           </li>
           <li {% if request.resolver_match.view_name == 'gallery' %}class="active"{% endif %}><a href="{% url 'gallery' %}">Gallery</a></li>
-          <li {% if '/venues' in request.path %}class="active"{% endif %}><a href="{% url 'venues' %}">Venues</a></li>
+          <li {% if '/venues' in request.path %}class="active"{% endif %}><a href="{% url 'venues' %}">Venues</a></li> -->
           <li {% if request.resolver_match.view_name == 'contact_us' %}class="active"{% endif %}><a href="{% url 'contact_us' %}">Contact Us</a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -108,18 +108,18 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-4 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home' %}">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'about_us' %}">About Us</a></li>
+              <!--<li><i class="bx bx-chevron-right"></i> <a href="{% url 'about_us' %}">About Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home' %}#services" class="scrollto">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'venues' %}">Venues</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="{% url 'venues' %}">Venues</a></li> -->
               <li><i class="bx bx-chevron-right"></i> <a href="{% url 'contact_us' %}">Contact Us</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+         <!-- <div class="col-lg-3 col-md-6 footer-links">
             <h4>Sample Menus</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="{% url 'menu_wedding' %}">Wedding</a></li>
@@ -127,24 +127,23 @@
               <li><i class="bx bx-chevron-right"></i> <a href="{% url 'menu_private' %}">Private Events</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{% url 'menu_informal' %}">Informal Events</a></li>
             </ul>
-          </div>
+          </div>-->
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-4 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              4401 Cresson Ave <br>
-              Philadelphia, PA 19127<br><br>
-              <strong>Phone:</strong> <a href="tel:2155097280">215-509-7280</a><br>
-              <strong>Email:</strong> <a href="mailto:info@infinitycaterers.com">info@infinitycaterers.com</a><br>
+              18 W Hortter St<br>
+              Philadelphia, PA 19119<br><br>
+              <strong>Phone:</strong> <a href="tel:6104059787">610-405-9787</a><br>
+              <strong>Email:</strong> <a href="mailto:fred@cbdevents.com">fred@cbdevents.com</a><br>
             </p>
 
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-info">
+          <div class="col-lg-4 col-md-6 footer-info">
             <img src="{% static 'img/infinity-by-design-logo-white.png' %}" alt="" class="img-fluid">
             <div class="social-links mt-3 text-center">
-              <a href="https://www.facebook.com/InfinityCaterersInc/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.instagram.com/infinity_caterers/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.facebook.com/CBDInfinityByDesign" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
               {% comment %} <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> {% endcomment %}
             </div>
           </div>

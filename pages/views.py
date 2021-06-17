@@ -47,7 +47,7 @@ def contact_us_form(request):
                 "NEW CONTACT FORM",
                 content,
                 "{}<{}>".format(name, email),
-                ["info@infinitycaterers.com"],
+                ["fred@cbdevents.com"],
                 fail_silently=False,
             )
             messages.success(
@@ -78,7 +78,7 @@ def request_quote(request):
                 "NEW QUOTE REQUEST",
                 content,
                 "{}<{}>".format(name, email),
-                ["info@infinitycaterers.com"],
+                ["fred@cbdevents.com"],
                 fail_silently=False,
             )
 
